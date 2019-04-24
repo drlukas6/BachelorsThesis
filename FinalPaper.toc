@@ -1,0 +1,7 @@
+\babel@toc {croatian}{}
+\contentsline {chapter}{\numberline {1}Uvod}{1}
+\contentsline {section}{\numberline {1.1}Uvod}{1}
+\contentsline {section}{\numberline {1.2}Ra\IeC {\v c}unalni vid}{1}
+\contentsline {subsection}{\numberline {1.2.1}Pregled}{1}
+\contentsline {subsection}{\numberline {1.2.2}Konvolucijske neuronske mre\IeC {\v z}e}{2}
+\contentsline {chapter}{Literatura}{5}
