@@ -51,10 +51,13 @@ Stavimo to u brojeve. Slike unutar \emph{mnist} seta podataka su veličine \text
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{conv_net}
+	\includegraphics[width=0.8\linewidth]{conv_net}
 	 \caption{Klizeći konvolucijski filter}
  	 \label{fig:conv_net_1}
 \end{figure}
 
-Spomenute prednosti, referenciraju se na glavnu značajku \emph{konvolucijskih mreža}. Cilj je ići dublje, ne šire. Za sliku veličine \texttt{100 x 100}, potpuno povezanoj neuronskoj mreži u prvom sloju treba \texttt{10 000} čvorova, svaki sa svojim parametrom za treniranje, dok konvolucijskoj to ne treba. \\
-Svaki sljedeći sloj ima drugu ulogu. Prvi najčešće ima ulogu raspoznavanja najosnovnijih elemenata slike kao što su različiti rubovi, dok sve dublji koriste podatke od prošlih i osnovne elemente grupiraju u apstraktne strukture koji predstavljaju značajnije elemente slike.
+Spomenute prednosti, referenciraju se na glavnu značajku \emph{konvolucijskih mreža}. 
+Cilj je ići dublje, ne šire. 
+Za sliku veličine \texttt{100 x 100}, potpuno povezanoj neuronskoj mreži u prvom sloju treba \texttt{10 000} čvorova, svaki sa svojim parametrom za treniranje, dok konvolucijskoj to ne treba. \\
+Svaki sljedeći sloj ima drugu ulogu. 
+Prvi najčešće ima ulogu raspoznavanja najosnovnijih elemenata slike kao što su različiti rubovi, dok sve dublji koriste podatke od prošlih i osnovne elemente grupiraju u apstraktne strukture koji predstavljaju značajnije elemente slike (\cite{o2015introduction}).

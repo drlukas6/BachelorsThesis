@@ -3,47 +3,47 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: FinalPaper.aux
 The style file: fer.bst
 Database file #1: literatura.bib
-Warning--to sort, need author or key in CV
-Warning--empty year in CV
-You've used 2 entries,
+Warning--entry type for "generalDatasets" isn't style-file defined
+--line 13 of file literatura.bib
+You've used 3 entries,
             2773 wiz_defined-function locations,
-            603 strings with 5083 characters,
-and the built_in function-call counts, 633 in all, are:
-= -- 55
-> -- 21
-< -- 1
-+ -- 8
-- -- 6
-* -- 39
-:= -- 87
-add.period$ -- 5
-call.type$ -- 2
-change.case$ -- 8
-chr.to.int$ -- 2
-cite$ -- 7
-duplicate$ -- 34
-empty$ -- 66
-format.name$ -- 9
-if$ -- 136
+            612 strings with 5369 characters,
+and the built_in function-call counts, 1012 in all, are:
+= -- 86
+> -- 41
+< -- 3
++ -- 15
+- -- 12
+* -- 58
+:= -- 167
+add.period$ -- 11
+call.type$ -- 3
+change.case$ -- 12
+chr.to.int$ -- 3
+cite$ -- 6
+duplicate$ -- 54
+empty$ -- 95
+format.name$ -- 17
+if$ -- 208
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 17
-num.names$ -- 4
-pop$ -- 25
+missing$ -- 3
+newline$ -- 25
+num.names$ -- 12
+pop$ -- 32
 preamble$ -- 1
-purify$ -- 6
+purify$ -- 10
 quote$ -- 0
-skip$ -- 29
+skip$ -- 43
 stack$ -- 0
-substring$ -- 5
-swap$ -- 2
+substring$ -- 6
+swap$ -- 3
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 22
-warning$ -- 2
-while$ -- 3
+type$ -- 28
+warning$ -- 0
+while$ -- 9
 width$ -- 0
-write$ -- 28
-(There were 2 warnings)
+write$ -- 47
+(There was 1 warning)

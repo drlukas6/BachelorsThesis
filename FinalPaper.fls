@@ -190,6 +190,12 @@ INPUT ./Images/conv_net.png
 INPUT ./Images/conv_net.png
 INPUT Chapters/GeneriranjeSlika.tex
 INPUT Chapters/GeneriranjeSlika.tex
+INPUT Images/image_csv.png
+INPUT ./Images/image_csv.png
+INPUT ./Images/image_csv.png
+INPUT Images/image_generation_pipeline.png
+INPUT ./Images/image_generation_pipeline.png
+INPUT ./Images/image_generation_pipeline.png
 INPUT FinalPaper.bbl
 INPUT FinalPaper.bbl
 INPUT FinalPaper.aux

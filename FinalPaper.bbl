@@ -1,13 +1,22 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{3}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[CV()]{CV}
-Računalni vid.
-\newblock \url{https://en.wikipedia.org/wiki/Computer_vision}.
+\bibitem[Chollet(2017)]{chollet2017deep}
+F.~Chollet.
+\newblock \emph{Deep Learning with Python}.
+\newblock Manning Publications Company, 2017.
+\newblock ISBN 9781617294433.
+\newblock URL \url{https://books.google.hr/books?id=Yo3CAQAACAAJ}.
+
+\bibitem[Gonfalonieri(2019)]{generalDatasets}
+Alexandre Gonfalonieri.
+\newblock How to build a data set for your machine learning project, 2019.
+\newblock URL
+  \url{https://towardsdatascience.com/how-to-build-a-data-set-for-your-machine-learning-project-5b3b871881ac}.
 
 \bibitem[O'Shea i Nash(2015)]{o2015introduction}
 Keiron O'Shea i Ryan Nash.

@@ -1,11 +1,11 @@
 # Fdb version 3
-["bibtex FinalPaper"] 1556182740 "FinalPaper.aux" "FinalPaper.bbl" "FinalPaper" 1556182742
+["bibtex FinalPaper"] 1556203932 "FinalPaper.aux" "FinalPaper.bbl" "FinalPaper" 1556205055
   "./fer.bst" 1284154898 26009 c9fe7ac62e814ee4c7bb7b0cdf6bf7a5 ""
-  "FinalPaper.aux" 1556182741 1360 da0af0e62f9b62fed0f14acecc9be29f ""
-  "literatura.bib" 1556182288 304 3ef32ab29228921ab7c970fa868a4e9f ""
+  "FinalPaper.aux" 1556205055 2789 6fd2ec2d7c5038a9c644cf614fb7426c ""
+  "literatura.bib" 1556203460 805 e511584891b26f9f1a796932f8a72615 ""
   (generated)
-  "FinalPaper.blg"
   "FinalPaper.bbl"
+  "FinalPaper.blg"
 ["latex"] 1556123740 "FinalPaper.tex" "FinalPaper.dvi" "FinalPaper" 1556123793
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1480098696 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
@@ -101,10 +101,10 @@
   "fer.cls" 1284154996 10145 76761193ed91b0ce7a5a85bc13f7191d ""
   (generated)
   "FinalPaper.log"
+  "FinalPaper.toc"
   "FinalPaper.aux"
   "FinalPaper.dvi"
-  "FinalPaper.toc"
-["pdflatex"] 1556182741 "FinalPaper.tex" "FinalPaper.pdf" "FinalPaper" 1556182742
+["pdflatex"] 1556205053 "FinalPaper.tex" "FinalPaper.pdf" "FinalPaper" 1556205055
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1480098668 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1480098668 2840 216e6e45ad352e2456e1149f28885bee ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc" 1480098668 2327 9d6df24f9c4f7368395224341a95523a ""
@@ -217,14 +217,16 @@
   "/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1523934492 2717033 f61a5287d9c22a39a74f1979fe3f905c ""
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1547164587 4220280 b8a3b9bb2ab166edc053a8516535c4ad ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
-  "Chapters/GeneriranjeSlika.tex" 1556182735 159 c384024f03690d9242fac9f69b9b0320 ""
-  "Chapters/Uvod.tex" 1556180729 5025 7b2f7622d1cf05de15659d8d332fd20d ""
-  "FinalPaper.aux" 1556182741 1360 da0af0e62f9b62fed0f14acecc9be29f ""
-  "FinalPaper.bbl" 1556182741 567 687014a1e4d23218863a6c5cdb8de9ba "bibtex FinalPaper"
-  "FinalPaper.tex" 1556181037 722 946f74428562ff394554b22f2043ae38 ""
-  "FinalPaper.toc" 1556182741 505 d67952768232daac24ab9ed28bf0e392 ""
+  "Chapters/GeneriranjeSlika.tex" 1556205051 3477 7dfcd5ceb0afd5cba9feb244935753cf ""
+  "Chapters/Uvod.tex" 1556197189 5055 24bdf2f3704c482755fd9d19c1fed3ff ""
+  "FinalPaper.aux" 1556205055 2789 6fd2ec2d7c5038a9c644cf614fb7426c ""
+  "FinalPaper.bbl" 1556203932 980 cc71a9bb779a52c7fac9da7a5492415d "bibtex FinalPaper"
+  "FinalPaper.tex" 1556203003 719 38decbe67129cd635bffd86637cbd44d ""
+  "FinalPaper.toc" 1556205055 1245 a1165456a0539e7ae3be395966f297f0 ""
   "Images/conv_net.png" 1554237490 149536 f8e33a8d04cc3400835f6bc087f96f31 ""
   "Images/cv_traffic.jpg" 1554233779 78502 9b514045af310a27a0f0af5de5b8cf6e ""
+  "Images/image_csv.png" 1556196805 334540 a8c8a9cf91ab8daba9108eb34f82271b ""
+  "Images/image_generation_pipeline.png" 1556204000 216948 3583ec99a82065d7eb5321099752f850 ""
   "fer.cls" 1284154996 10145 76761193ed91b0ce7a5a85bc13f7191d ""
   (generated)
   "FinalPaper.pdf"

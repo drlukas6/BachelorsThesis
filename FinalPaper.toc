@@ -4,6 +4,17 @@
 \contentsline {section}{\numberline {1.2}Ra\IeC {\v c}unalni vid}{1}
 \contentsline {subsection}{\numberline {1.2.1}Pregled}{1}
 \contentsline {subsection}{\numberline {1.2.2}Konvolucijske neuronske mre\IeC {\v z}e}{2}
-\contentsline {chapter}{\numberline {2}Generiranje Slika}{4}
-\contentsline {section}{\numberline {2.1}Apstrakcija postupka}{4}
-\contentsline {chapter}{Literatura}{5}
+\contentsline {chapter}{\numberline {2}Generiranje seta podataka}{4}
+\contentsline {section}{\numberline {2.1}Zna\IeC {\v c}aj podataka u dubokom u\IeC {\v c}enju}{4}
+\contentsline {subsubsection}{Prikupljanje podataka}{4}
+\contentsline {subsubsection}{Klasifikacija i ozna\IeC {\v c}avanje podataka}{4}
+\contentsline {section}{\numberline {2.2}Generiranje slika}{5}
+\contentsline {subsection}{\numberline {2.2.1}Generalizacija postupka}{5}
+\contentsline {subsection}{\numberline {2.2.2}Prikupljanje fontova}{6}
+\contentsline {subsection}{\numberline {2.2.3}Generiranje simbola}{6}
+\contentsline {subsection}{\numberline {2.2.4}Transformacije}{6}
+\contentsline {subsubsection}{Skaliranje}{6}
+\contentsline {subsubsection}{Rotacija}{6}
+\contentsline {subsubsection}{Afine transfromacije}{6}
+\contentsline {subsection}{\numberline {2.2.5}Kreiranje cjelovitih slika}{6}
+\contentsline {chapter}{Literatura}{7}
