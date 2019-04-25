@@ -188,9 +188,8 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmbx10.tfm
 INPUT Images/conv_net.png
 INPUT ./Images/conv_net.png
 INPUT ./Images/conv_net.png
-INPUT Images/conv_net_2.jpg
-INPUT ./Images/conv_net_2.jpg
-INPUT ./Images/conv_net_2.jpg
+INPUT Chapters/GeneriranjeSlika.tex
+INPUT Chapters/GeneriranjeSlika.tex
 INPUT FinalPaper.bbl
 INPUT FinalPaper.bbl
 INPUT FinalPaper.aux

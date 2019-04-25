@@ -4,4 +4,6 @@
 \contentsline {section}{\numberline {1.2}Ra\IeC {\v c}unalni vid}{1}
 \contentsline {subsection}{\numberline {1.2.1}Pregled}{1}
 \contentsline {subsection}{\numberline {1.2.2}Konvolucijske neuronske mre\IeC {\v z}e}{2}
+\contentsline {chapter}{\numberline {2}Generiranje Slika}{4}
+\contentsline {section}{\numberline {2.1}Apstrakcija postupka}{4}
 \contentsline {chapter}{Literatura}{5}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.11)  25 APR 2019 00:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.11)  25 APR 2019 10:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -483,31 +483,26 @@ Package pdftex.def Info: Images/cv_traffic.jpg  used on input line 35.
 <Images/conv_net.png, id=33, 680.5425pt x 463.7325pt>
 File: Images/conv_net.png Graphic file (type png)
 <use Images/conv_net.png>
-Package pdftex.def Info: Images/conv_net.png  used on input line 53.
-(pdftex.def)             Requested size: 165.02347pt x 112.44437pt.
-
-Overfull \hbox (4.43088pt too wide) in paragraph at lines 58--60
+Package pdftex.def Info: Images/conv_net.png  used on input line 54.
+(pdftex.def)             Requested size: 206.28249pt x 140.56432pt.
+)
+Overfull \hbox (4.43088pt too wide) in paragraph at lines 59--26
 []\T1/lmr/m/n/12 Spomenute pred-nosti, re-fe-ren-ci-raju se na glavnu zna-£ajku
  \T1/lmr/m/it/12 ko-nvo-lu-cij-skih mreºa\T1/lmr/m/n/12 .
  []
 
-<Images/conv_net_2.jpg, id=34, 371.3875pt x 507.8975pt>
-File: Images/conv_net_2.jpg Graphic file (type jpg)
-<use Images/conv_net_2.jpg>
-Package pdftex.def Info: Images/conv_net_2.jpg  used on input line 63.
-(pdftex.def)             Requested size: 61.88222pt x 84.62871pt.
+[3 <./Images/conv_net.png (PNG copy)>]
+Poglavlje 2.
+(./Chapters/GeneriranjeSlika.tex) (./FinalPaper.bbl [4
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) (./FinalPaper.bbl [3 <./Images/conv_net.png (PNG copy)>] [4 <./Images/conv_ne
-t_2.jpg>]) [5
+]) [5
 
 ] (./FinalPaper.aux) ) 
 Here is how much of TeX's memory you used:
- 5790 strings out of 492649
- 84115 string characters out of 6129622
- 163167 words of memory out of 5000000
- 9520 multiletter control sequences out of 15000+600000
+ 5787 strings out of 492649
+ 84058 string characters out of 6129622
+ 163157 words of memory out of 5000000
+ 9515 multiletter control sequences out of 15000+600000
  80846 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,6n,40p,479b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -526,10 +521,10 @@ l/texlive/2018/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/
 nts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
 public/lm/lmtt12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/
 lmtto10.pfb>
-Output written on FinalPaper.pdf (9 pages, 593114 bytes).
+Output written on FinalPaper.pdf (9 pages, 517075 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
+ 93 PDF objects out of 1000 (max. 8388607)
  66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
