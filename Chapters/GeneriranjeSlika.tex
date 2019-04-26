@@ -37,20 +37,66 @@ Za relativan uspjeh treniranja mreže za detekciju i klasifikaciju 14 tekstovnih
 Postupak koji sam razvio primjenjuje sve taktike (\cite{chollet2017deep}) potrebne za stvaranje raznovrsnog i kvalitetnog seta podataka.
 Zbog transformacija, opisanih u daljnjim djelovima poglavlja, gotovo je nemoguće da iako se isti font stavlja na pozadinu, nastane isti oblik.
 Na slici ~\ref{fig:imageGenerationPipeline} prikazana je topologija cjevovoda koja kreira slike.
-
+Cijeli cjevovod, implementiran je unutar programskog paketa \emph{ImageGenerator}, kojeg sam napisao u svrhu apstraktiranja cijelog postupka.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=1.0\linewidth]{image_generation_pipeline}
 	 \caption{Prikaz visoke razine cjevovoda za generiranje slika}
  	 \label{fig:imageGenerationPipeline}
 \end{figure}
+
 \subsection{Prikupljanje fontova}
+Ispisivanje velikog broja simbola sa razlikom između varijacija istog monoton je i neisplativ posao, posebice zbog dostupnosti svih potrebnih resursa na internetu.
+U prilog je također išlo to što su dostupni fontovi, koji primjenjuju rukopisni stil, najčešće zbilja napisani rukom i vektorizirani, pa, generiranje i transformiranje neće negativno utjecati na kvalitetu.
+Osim rukopisnih fontova, skinuo sam mali broj fontova koji su stilski između čistog rukopisnog i tipkanog.
+Fontovi su bili prikupljeni sa sljedećih izvora, a na slici ~\ref{fig:fontDiffs} vidljivi su primjeri istih:
+\begin{itemize}
+\item \url{https://www.dafont.com}
+\item \url{https://www.1001fonts.com}
+\item \url{https://www.1001freefonts.com}
+\end{itemize}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.85\linewidth]{font_diffs}
+	 \caption{Varijacije unutar simbola uzrokovane fontovima}
+ 	 \label{fig:fontDiffs}
+\end{figure}
 
 \subsection{Generiranje simbola}
+Nakon prikupljanja i sortiranja fontova, generiranje samih simbola bio je jednostavan posao.
+Važno je bilo očuvati transparentnost pozadine iza simbola jer u trenutku kada se postavi na pozadinu po izboru, ona mora biti vidljiva.
+\begin{algorithm}
+\caption{Generiraj sve simbole}
+\begin{algorithmic}[1]
+	\Function{generirajTextSliku}{$font, simbol$}
+		\State $velicina \gets font.velicina(simbol)$
+		\State $slika \gets Image('RGBA', size, (255, 255, 255, 0))$
+		\State $slika.text = simbol$
+		
+		\Return $slika$
+	\EndFunction
+	\Function{generirajSveSimbole}{\null}
+		\For{\texttt{simbol in simboli}}
+			\For{\texttt{i in [0, brojFontova>}}
+				\State $direktorijSimbola \leftarrow spoji(putDoSimbola, simbol)$
+				\If{$direktorijSimbola\ ne\ postoji$}
+					\State \Call{kreirajDirektorij}{$direktorijSimbola$}
+				\EndIf
+				\State $font \leftarrow fontovi[i]$
+				\State $generirana slika \gets$ \Call{generirajTextSliku}{$font, simbol$}
+				\State \Call{spremiSliku}{$generiranaSlika$}
+			\EndFor
+		\EndFor
+	\EndFunction
+\end{algorithmic}
+\end{algorithm}
 
 \subsection{Transformacije}
 \subsubsection{Skaliranje}
+sdfadsf
 \subsubsection{Rotacija}
+fasdf
 \subsubsection{Afine transfromacije}
-
+asdfsadf
 \subsection{Kreiranje cjelovitih slika}
+afdfaf

@@ -1,0 +1,14 @@
+\BOOKMARK [0][-]{chapter.1}{Uvod}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Uvod}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Racunalni vid}{chapter.1}% 3
+\BOOKMARK [2][-]{subsection.1.2.1}{Pregled}{section.1.2}% 4
+\BOOKMARK [2][-]{subsection.1.2.2}{Konvolucijske neuronske mre\236e}{section.1.2}% 5
+\BOOKMARK [0][-]{chapter.2}{Generiranje seta podataka}{}% 6
+\BOOKMARK [1][-]{section.2.1}{Znacaj podataka u dubokom ucenju}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.2}{Generiranje slika}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.1}{Generalizacija postupka}{section.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.2}{Prikupljanje fontova}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.3}{Generiranje simbola}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.4}{Transformacije}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.5}{Kreiranje cjelovitih slika}{section.2.2}% 13
+\BOOKMARK [0][-]{chapter*.12}{Literatura}{}% 14
