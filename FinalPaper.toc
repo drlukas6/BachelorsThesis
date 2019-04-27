@@ -13,8 +13,8 @@
 \contentsline {subsection}{\numberline {2.2.2}Prikupljanje fontova}{6}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Generiranje simbola}{7}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Transformacije}{7}{subsection.2.2.4}
-\contentsline {subsubsection}{Skaliranje}{7}{section*.9}
-\contentsline {subsubsection}{Rotacija}{7}{section*.10}
-\contentsline {subsubsection}{Afine transfromacije}{8}{section*.11}
-\contentsline {subsection}{\numberline {2.2.5}Kreiranje cjelovitih slika}{8}{subsection.2.2.5}
-\contentsline {chapter}{Literatura}{9}{chapter*.12}
+\contentsline {subsubsection}{Skaliranje}{8}{section*.9}
+\contentsline {subsubsection}{Rotacija}{8}{section*.11}
+\contentsline {subsubsection}{Afine transfromacije}{9}{section*.13}
+\contentsline {subsection}{\numberline {2.2.5}Kreiranje cjelovitih slika}{10}{subsection.2.2.5}
+\contentsline {chapter}{Literatura}{11}{chapter*.15}

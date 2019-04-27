@@ -70,19 +70,17 @@ Važno je bilo očuvati transparentnost pozadine iza simbola jer u trenutku kada
 \begin{algorithmic}[1]
 	\Function{generirajTextSliku}{$font, simbol$}
 		\State $velicina \gets font.velicina(simbol)$
-		\State $slika \gets Image('RGBA', size, (255, 255, 255, 0))$
+		\State $slika \gets Image('RGBA', velicina, (255, 255, 255, 0))$
 		\State $slika.text = simbol$
-		
-		\Return $slika$
+		\State \Return $slika$
 	\EndFunction
 	\Function{generirajSveSimbole}{\null}
 		\For{\texttt{simbol in simboli}}
-			\For{\texttt{i in [0, brojFontova>}}
+			\For{\texttt{font in fontovi}}
 				\State $direktorijSimbola \leftarrow spoji(putDoSimbola, simbol)$
 				\If{$direktorijSimbola\ ne\ postoji$}
 					\State \Call{kreirajDirektorij}{$direktorijSimbola$}
 				\EndIf
-				\State $font \leftarrow fontovi[i]$
 				\State $generirana slika \gets$ \Call{generirajTextSliku}{$font, simbol$}
 				\State \Call{spremiSliku}{$generiranaSlika$}
 			\EndFor
@@ -92,11 +90,77 @@ Važno je bilo očuvati transparentnost pozadine iza simbola jer u trenutku kada
 \end{algorithm}
 
 \subsection{Transformacije}
+Prije postavljanja simbola na nasumično odabranu sliku, svaki simbol prošao je kroz tri točke transformiranja:
+\begin{enumerate}
+\item Skaliranje
+\item Rotacija
+\item Afina transformacija
+\end{enumerate}
+Cilj transformacija je maksimalno unjeti raznolikost unutar dataseta u slučaju premalog ili presličnog broja slika.
+Klasa \emph{ImageGenerator} za to se brine na sličan način kao programski paket \emph{Keras.preprocessing.image.ImageDataGenerator} (\cite{Keras.io})
+Transformaciju nad slikama vršio sam pomoću programskog paketa \emph{OpenCV} (\cite{OpenCV}) jer apstraktira potrebne matematičke operacije na razumljiv, lako koristiv način i prilagodljiv način.
+Tijekom faze transformiranja i postavljanja slike na pozadinu, one su u obliku matrice, definirane pomoću programskog paketa \emph{Numpy}.
 \subsubsection{Skaliranje}
-sdfadsf
+Skaliranje pomoću \emph{OpenCV} paketa može se vršiti ili ručno, specifirajući točnu veličinu, ili dajući faktor skaliranja.
+\emph{OpenCV} također automatski primjenjuje \emph{interpolaciju} kako bi se kvalitete maksimalno sačuvala.
+Skaliranje se vrši na način da se matrica slike pomnoži sa matricom skaliranja, zadanom na sljedeći način:
+$$
+M
+=
+\begin{bmatrix}
+	s_{x} & 0 \\
+	0 & s_{y}
+\end{bmatrix},
+$$
+gdje je $s_{x}$ faktor skaliranja u $x$ dimenziji, a $s_{y}$ faktor skaliranja u $y$ dimenziji.
+Rezultat skaliranja vidljiv je na slici ~\ref{fig:scaling}
+\lstset{numbers=left}
+\lstinputlisting[language=python]{CodeSamples/Scaling.py}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.4\linewidth]{Scaling}
+	 \caption{Rezultat primjene skaliranja sa $s_{x} = s_{y} = 1.25$}
+ 	 \label{fig:scaling}
+\end{figure}
 \subsubsection{Rotacija}
-fasdf
+Rotacija slike, za kut $\theta$ ostvaruje se množenjem sa matricom rotacije:
+$$
+M
+=
+\begin{bmatrix}
+	\cos(\theta) && -\sin(\theta) \\
+	\sin(\theta) && \cos(\theta)
+\end{bmatrix}
+$$
+Iako sam ja rotiranje vršio iz središnje točke, \emph{OpenCV} nudi podršku za eksplicitno zadavanje točke oko koje će se rotacija vršiti.
+Rezultat rotiranja vidljiv je na slici ~\ref{fig:Rotating}
+\lstset{numbers=left}
+\lstinputlisting[language=python]{CodeSamples/Rotation.py}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.4\linewidth]{Rotation}
+	 \caption{Rezultat primjene rotacije sa $\theta = 26$}
+ 	 \label{fig:Rotating}
+\end{figure}
 \subsubsection{Afine transfromacije}
-asdfsadf
+Afine transformacije koristim za prividno transformiranje simbola "u prostoru", bez velikog rizika od prevelike distorzije slike jer sve paralelne linije, nakon transformacije ostaju paralelne.
+\emph{OpenCV} Afinu transformaciju vrši tako da tri odabrane točke na slici pomakne za određeni koeficijent.
+Kao i ostale transformacije, matematički nastaje množenjem matrice slike s matricom afine transformacije oblika.
+$$
+\begin{bmatrix}
+	1 && \tan(\beta) \\
+	\tan(\alpha) && 1
+\end{bmatrix}
+$$
+gdje su $\alpha$ i $\beta$ razlike u kutevima prema pripadajućim koordinatnim osima.
+Rezultat primjene afine transformacije na simbolu vidljiv je na slici ~\ref{fig:Affine}
+\lstset{numbers=left}
+\lstinputlisting[language=python]{CodeSamples/Affine.py}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.4\linewidth]{Affine}
+	 \caption{Rezultat primjene afine transformacije s pripadajućim referentnim točkama}
+ 	 \label{fig:Affine}
+\end{figure}
+
 \subsection{Kreiranje cjelovitih slika}
-afdfaf

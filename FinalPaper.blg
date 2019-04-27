@@ -5,45 +5,53 @@ The style file: fer.bst
 Database file #1: literatura.bib
 Warning--entry type for "generalDatasets" isn't style-file defined
 --line 13 of file literatura.bib
-You've used 3 entries,
+Warning--entry type for "Keras.io" isn't style-file defined
+--line 30 of file literatura.bib
+Warning--entry type for "OpenCV" isn't style-file defined
+--line 35 of file literatura.bib
+Warning--to sort, need author or key in Keras.io
+Warning--to sort, need author or key in OpenCV
+Warning--empty year in Keras.io
+Warning--empty year in OpenCV
+You've used 5 entries,
             2773 wiz_defined-function locations,
-            612 strings with 5369 characters,
-and the built_in function-call counts, 1012 in all, are:
-= -- 86
+            619 strings with 5508 characters,
+and the built_in function-call counts, 1492 in all, are:
+= -- 132
 > -- 41
 < -- 3
-+ -- 15
++ -- 17
 - -- 12
-* -- 58
-:= -- 167
-add.period$ -- 11
-call.type$ -- 3
-change.case$ -- 12
-chr.to.int$ -- 3
-cite$ -- 6
-duplicate$ -- 54
-empty$ -- 95
+* -- 90
+:= -- 205
+add.period$ -- 15
+call.type$ -- 5
+change.case$ -- 18
+chr.to.int$ -- 5
+cite$ -- 16
+duplicate$ -- 84
+empty$ -- 165
 format.name$ -- 17
-if$ -- 208
+if$ -- 326
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 3
-newline$ -- 25
+newline$ -- 33
 num.names$ -- 12
-pop$ -- 32
+pop$ -- 60
 preamble$ -- 1
-purify$ -- 10
+purify$ -- 14
 quote$ -- 0
-skip$ -- 43
+skip$ -- 71
 stack$ -- 0
-substring$ -- 6
-swap$ -- 3
+substring$ -- 12
+swap$ -- 5
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 28
-warning$ -- 0
+type$ -- 50
+warning$ -- 4
 while$ -- 9
 width$ -- 0
-write$ -- 47
-(There was 1 warning)
+write$ -- 65
+(There were 7 warnings)
