@@ -40,14 +40,17 @@ Danas, se velika količina problema rješava uz pomoć računalnog vida, često 
 \subsection{Konvolucijske neuronske mreže}
 Konvolucijske neuronske mreže danas se koriste kao najefektivniji način postizanja računalnog vida. Glavna prednost nad potpuno povezanim neuronskim mrežama je manji broj \emph{težina} za treniranje što znatno ubrzava treniranje. Ipak, ono što je možda najvažnije za napomenuti je to što pozicija traženog elementa na slici \emph{konvolucijskoj neuronskoj mreži} ne igra ulogu. 
 
-Svaki sloj \emph{duboke konvolucijske neuronske mreže} funkcionira kao filter koji se kreće po slici, pamteći što ga je najviše aktiviralo. Najčešće se koristi filter veličine \texttt{3 x 3}.
+Svaki sloj \emph{duboke konvolucijske neuronske mreže} funkcionira kao filter koji se kreće po slici, pamteći što ga je najviše aktiviralo. Najčešće se koristi filter veličine $3\times3$.
 (Slika ~\ref{fig:conv_net_1})
 
-Dalje, uz konvolucijski sloj, nerijetko se postavlja \emph{max pooling sloj}. Na apstraktnoj razini, princip rada max pooling sloja je sljedeći: Ako uzmemo veličinu pooling filtra kao onu koja se najčešće koristi, to jest \texttt{2 x 2}, on izlaz iz prethodnog sloja raspodjeli na kvadrate iste veličine. Zatim, filter se postavi između 4 kvadrata i sebi za vrijednost stavi najveću iz svakog u pripadajuće polje. \\ 
+Dalje, uz konvolucijski sloj, nerijetko se postavlja \emph{max pooling sloj}.
+Na apstraktnoj razini, princip rada max pooling sloja je sljedeći: Ako uzmemo veličinu pooling filtra kao onu koja se najčešće koristi, to jest $2\times2$, on izlaz iz prethodnog sloja raspodjeli na kvadrate iste veličine. Zatim, filter se postavi između 4 kvadrata i sebi za vrijednost stavi najveću iz svakog u pripadajuće polje. \\ 
 Prirodno je pitati se zašto se to koristi i zašto to radi. \\
 Pooling filter jednostavno smanjuje "rezoluciju" prethodnog sloja, ne mjenjajući važne čimbenike potrebne za daljnji rad mreže. Na primjer, vertikalna linija, krug, ili elipsa, ostaje ono što je, jedino manje razlučivo. 
 Bitno je napomenuti da smanjivanjem rezolucije dobivamo puno manje parametara za treniranje. 
-Stavimo to u brojeve. Slike unutar \emph{mnist} seta podataka su veličine \texttt{28 * 28}. To znači da bi se treniralo $28*28$ parametara. Primjenom \emph{Max pooling sloja} veličine \texttt{2 x 2}, treniralo bi se $\frac{1}{4}*(28*28)$ parametara. 
+Stavimo to u brojeve.
+Slike unutar \emph{mnist} seta podataka su veličine $28\times28$.
+To znači da bi se treniralo $28*28$ parametara. Primjenom \emph{Max pooling sloja} veličine $2\times2$, treniralo bi se $\frac{1}{4}\times(28\times28)$ parametara. 
 
 \begin{figure}[h!]
 	\centering
@@ -58,6 +61,6 @@ Stavimo to u brojeve. Slike unutar \emph{mnist} seta podataka su veličine \text
 
 Spomenute prednosti, referenciraju se na glavnu značajku \emph{konvolucijskih mreža}. 
 Cilj je ići dublje, ne šire. 
-Za sliku veličine \texttt{100 x 100}, potpuno povezanoj neuronskoj mreži u prvom sloju treba \texttt{10 000} čvorova, svaki sa svojim parametrom za treniranje, dok konvolucijskoj to ne treba. \\
+Za sliku veličine $100\times100$, potpuno povezanoj neuronskoj mreži u prvom sloju treba \texttt{10 000} čvorova, svaki sa svojim parametrom za treniranje, dok konvolucijskoj to ne treba. \\
 Svaki sljedeći sloj ima drugu ulogu. 
 Prvi najčešće ima ulogu raspoznavanja najosnovnijih elemenata slike kao što su različiti rubovi, dok sve dublji koriste podatke od prošlih i osnovne elemente grupiraju u apstraktne strukture koji predstavljaju značajnije elemente slike (\cite{o2015introduction}).

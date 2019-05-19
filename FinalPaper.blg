@@ -9,49 +9,61 @@ Warning--entry type for "Keras.io" isn't style-file defined
 --line 30 of file literatura.bib
 Warning--entry type for "OpenCV" isn't style-file defined
 --line 35 of file literatura.bib
+Warning--entry type for "TFRecords" isn't style-file defined
+--line 40 of file literatura.bib
+Warning--entry type for "tensorflow.org" isn't style-file defined
+--line 45 of file literatura.bib
+Warning--entry type for "ssd2" isn't style-file defined
+--line 81 of file literatura.bib
 Warning--to sort, need author or key in Keras.io
 Warning--to sort, need author or key in OpenCV
+Warning--to sort, need author or key in TFRecords
+Warning--to sort, need author or key in tensorflow.org
+Warning--to sort, need author or key in ssd2
 Warning--empty year in Keras.io
 Warning--empty year in OpenCV
-You've used 5 entries,
+Warning--empty year in TFRecords
+Warning--empty year in ssd2
+Warning--empty year in tensorflow.org
+You've used 11 entries,
             2773 wiz_defined-function locations,
-            619 strings with 5508 characters,
-and the built_in function-call counts, 1492 in all, are:
-= -- 132
-> -- 41
-< -- 3
-+ -- 17
-- -- 12
-* -- 90
-:= -- 205
-add.period$ -- 15
-call.type$ -- 5
-change.case$ -- 18
-chr.to.int$ -- 5
-cite$ -- 16
-duplicate$ -- 84
-empty$ -- 165
-format.name$ -- 17
-if$ -- 326
+            644 strings with 6316 characters,
+and the built_in function-call counts, 3982 in all, are:
+= -- 352
+> -- 167
+< -- 6
++ -- 62
+- -- 51
+* -- 278
+:= -- 522
+add.period$ -- 30
+call.type$ -- 11
+change.case$ -- 48
+chr.to.int$ -- 11
+cite$ -- 37
+duplicate$ -- 210
+empty$ -- 402
+format.name$ -- 61
+if$ -- 884
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 3
-newline$ -- 33
-num.names$ -- 12
-pop$ -- 60
+missing$ -- 6
+newline$ -- 59
+num.names$ -- 24
+pop$ -- 152
 preamble$ -- 1
-purify$ -- 14
+purify$ -- 39
 quote$ -- 0
-skip$ -- 71
+skip$ -- 185
 stack$ -- 0
-substring$ -- 12
-swap$ -- 5
-text.length$ -- 0
+substring$ -- 75
+swap$ -- 27
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 50
-warning$ -- 4
-while$ -- 9
+type$ -- 116
+warning$ -- 10
+while$ -- 24
 width$ -- 0
-write$ -- 65
-(There were 7 warnings)
+write$ -- 128
+(There were 16 warnings)
