@@ -16,7 +16,7 @@ Razlog tome je raznolikost elemenata koje mreža mora moći detektirati i fleksi
 \subsubsection{Klasifikacija i označavanje podataka}
 Generirani podaci na određeni način moraju biti prikazani mreži. 
 Iako u mrežu slika ulazi kao vektor dimenzija \texttt{(visina x širina x kanali)} mreži su potrebni i podaci za uspoređivanje rezultata i računanje uspješnosti.
-U ovom radu koristio sa \texttt{.csv} datoteku za dohvaćanje i opisnik slika. 
+U ovom radu koristio sa \texttt{.csv} datoteku za dohvaćanje i kao opisnik slika. 
 Postupak automatskog generiranja slika uvelike je olakšao klasifikaciju i označavanje jer je cijeli postupak ostvaren kao "cjevovod".
 Pri izlasku, slika bi bila prikazana kao na slici ~\ref{fig:pipelineExitExample}.
 Datoteka bi upisano imala ime slike, simbol na slici, širinu, visinu i točan položaj elementa na slici. 
@@ -97,8 +97,8 @@ Prije postavljanja simbola na nasumično odabranu sliku, svaki simbol prošao je
 \item Afina transformacija
 \end{enumerate}
 Cilj transformacija je maksimalno unjeti raznolikost unutar dataseta u slučaju premalog ili presličnog broja slika.
-Klasa \emph{ImageGenerator} za to se brine na sličan način kao programski paket \emph{Keras.preprocessing.image.ImageDataGenerator} (\cite{Keras.io})
-Transformaciju nad slikama vršio sam pomoću programskog paketa \emph{OpenCV} (\cite{OpenCV}) jer apstraktira potrebne matematičke operacije na razumljiv, lako koristiv način i prilagodljiv način.
+Klasa \emph{ImageGenerator} za to se brine na sličan način kao programski paket \emph{Keras.preprocessing.image.ImageDataGenerator} (\cite{Keras.io}).
+Transformaciju nad slikama vršio sam pomoću programskog paketa \emph{OpenCV} (\cite{OpenCV}) jer apstraktira potrebne matematičke operacije na razumljiv, lako koristiv i prilagodljiv način.
 Tijekom faze transformiranja i postavljanja slike na pozadinu, one su u obliku matrice, definirane pomoću programskog paketa \emph{Numpy}.
 \subsubsection{Skaliranje}
 Skaliranje pomoću \emph{OpenCV} paketa može se vršiti ili ručno, specifirajući točnu veličinu, ili dajući faktor skaliranja.
@@ -139,7 +139,7 @@ Rezultat rotiranja vidljiv je na slici ~\ref{fig:Rotating}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.4\linewidth]{Rotation}
-	 \caption{Rezultat primjene rotacije sa $\theta = 26$}
+	 \caption{Rezultat primjene rotacije sa $\theta = 25$}
  	 \label{fig:Rotating}
 \end{figure}
 \subsubsection{Afine transfromacije}
@@ -164,3 +164,54 @@ Rezultat primjene afine transformacije na simbolu vidljiv je na slici ~\ref{fig:
 \end{figure}
 
 \subsection{Kreiranje cjelovitih slika}
+Kreiranje cjelovitih slika svodilo se na postavljanje generiranih i transformiranih simbola na pozadinu po izboru.
+Pozadina također igra veliku ulogu u prepoznavanju jer mreža pregledava cijelu sliku. 
+Za svoje potrebe odlučio sam za pozadinu koristiti slike matematičkih bilježnica uz pretpostavku da bi se iste koristile naviše kada bi se ova mreža koristila u stvarnom svijetu.
+Izlazi iz mreže vidljivi su na slikama ~\ref{fig:ImageGeneratorOutputs} i ~\ref{fig:ImageGeneratorTermOutputs}.
+Slike su spremljene u direktorij \texttt{Images}, a \texttt{.csv} opisnik u direktorij \texttt{Data} odakle će se dalje referencirati za kreiranje \texttt{.record} datoteke za daljnje korištenje \emph{Tensorflow-u}.
+\begin{figure}
+	\subfloat[Izlazna slika iz \emph{ImageGenerator-a}] {%
+		\includegraphics[width=0.4\linewidth]{image_generator_output} %
+		\label{fig:ImageGeneratorOutputs}
+	}
+
+	\subfloat[Ispis za praćenje statusa generiranja slika] {%
+		\includegraphics[width=1.0\linewidth]{image_generator_term_output} %
+		\label{fig:ImageGeneratorTermOutputs}
+	}
+\end{figure}
+
+\section{TFRecords}
+Zašto je bolje za mrežu da podatke čita iz \texttt{.record} datoteke nego odvojeno slike i pripadajuće opise?
+Zamislimo sljedeći scenarij.
+Treniranje se vrši na računalu sa \texttt{HDD} diskom, slike i oznake su u različitim direktorijima.
+Svako čitanje sljedeće slike i oznake rezultira potencijalnim pomicanjem glave diska.
+Cilj je da sve potrebne datoteke budu što bolje poravnate u memoriji.
+Tu se pokazuje najveći značaj \emph{TFRecords} datoteke. 
+Jedna binarna datoteka koja sadrži sve informacije za mrežu, jedinstveno poravnata u memoriji (\cite{TFRecords}). \\
+U pozadini, \emph{TFRecords} je format koji koristi \emph{Protocol buffer} tehnologiju.
+\emph{Protocol buffer} ili kraće \emph{Protobuf} je knjižnica za efikasnu serijalizaciju strukturiranih podataka (\cite{tensorflow.org}).
+Konkretno, koristimo \emph{Protobuf} poruke oblika \texttt{"string" : value} za predstavljanje objekata mreži.
+U mom slučaju, slike su zapisane na sljedeći način:
+\begin{itemize}
+\item height = \texttt{int64}
+\item width = \texttt{int64}
+\item filename = \texttt{bytes}
+\item sourceid = \texttt{bytes}
+\item encoded = \texttt{bytes}
+\item format = \texttt{bytes}
+\item xmins = \texttt{float\_list}
+\item xmaxs = \texttt{float\_list}
+\item ymins = \texttt{float\_list}
+\item ymaxs = \texttt{float\_list}
+\item classes\_text = \texttt{bytes\_list}
+\item classes = \texttt{int64\_list}
+\
+\end{itemize}
+Svi navedeni podaci zapisuju se pod \texttt{feature} ključ. \\
+Kako u našem slučaju vršimo detekciju i klasifikaciju objekata, bitno je da na neki način i klasama damo jedinstveni identifikator.
+Naime, u \emph{TFRecords} datoteku pod ključ \emph{classes} koji sadrži podatke o tom koji su svi objekti na slici ne pišemo doslovno ime objekta (npr. Automobil, kuća, ...).
+Pišemo brojčanu vrijednost istog objekta koja ga predstavlja. 
+Isti način je precizniji i sažetiji. \\
+Konkretno ime dnevnika koji sadrži mapiranja iz objekta u njegovu brojčanu vrijednost naziva se \emph{Label map} i osim za stvaranje \emph{TFRecords} datoteke, koristi ga i sama mreža i mi kad iz mreže čitamo što je ista prepoznala.
+Za kreiranje datoteke pratio sam korake opisane na službenoj \emph{Tensorflow} stranici.
