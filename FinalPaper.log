@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.11)  19 MAY 2019 12:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.11)  21 MAY 2019 22:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -639,13 +639,13 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 3.
-)
+ [4
+
+])
 \tf@toc=\write4
 \openout4 = `FinalPaper.toc'.
 
- [4
-
-]
+ [5]
 Poglavlje 1.
 (./Chapters/Uvod.tex
 
@@ -656,13 +656,13 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 [1
 
 ]
-<Images/cv_traffic.jpg, id=155, 702.625pt x 394.47375pt>
+<Images/cv_traffic.jpg, id=170, 702.625pt x 394.47375pt>
 File: Images/cv_traffic.jpg Graphic file (type jpg)
 <use Images/cv_traffic.jpg>
 Package pdftex.def Info: Images/cv_traffic.jpg  used on input line 35.
 (pdftex.def)             Requested size: 330.05322pt x 185.30637pt.
  [2 <./Images/cv_traffic.jpg>]
-<Images/conv_net.png, id=167, 680.5425pt x 463.7325pt>
+<Images/conv_net.png, id=183, 680.5425pt x 463.7325pt>
 File: Images/conv_net.png Graphic file (type png)
 <use Images/conv_net.png>
 Package pdftex.def Info: Images/conv_net.png  used on input line 57.
@@ -686,18 +686,15 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 1.
 
-
-LaTeX Warning: Command \v invalid in math mode on input line 18.
-
 [4
 
 ]
-<Images/image_csv.png, id=193, 240.9pt x 120.45pt>
+<Images/image_csv.png, id=206, 240.9pt x 120.45pt>
 File: Images/image_csv.png Graphic file (type png)
 <use Images/image_csv.png>
 Package pdftex.def Info: Images/image_csv.png  used on input line 29.
 (pdftex.def)             Requested size: 412.56497pt x 206.30244pt.
-<Images/image_generation_pipeline.png, id=197, 1505.625pt x 671.50874pt>
+<Images/image_generation_pipeline.png, id=210, 1505.625pt x 671.50874pt>
 File: Images/image_generation_pipeline.png Graphic file (type png)
 <use Images/image_generation_pipeline.png>
 Package pdftex.def Info: Images/image_generation_pipeline.png  used on input li
@@ -708,7 +705,7 @@ ne 43.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [5 <./Images/image_csv.png>]
-<Images/font_diffs.png, id=209, 902.37125pt x 432.61626pt>
+<Images/font_diffs.png, id=222, 902.37125pt x 432.61626pt>
 File: Images/font_diffs.png Graphic file (type png)
 <use Images/font_diffs.png>
 Package pdftex.def Info: Images/font_diffs.png  used on input line 60.
@@ -728,7 +725,7 @@ Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 118.
 
 (./CodeSamples/Scaling.py)
-<Images/Scaling.png, id=229, 440.64626pt x 269.005pt>
+<Images/Scaling.png, id=243, 440.64626pt x 269.005pt>
 File: Images/Scaling.png Graphic file (type png)
 <use Images/Scaling.png>
 Package pdftex.def Info: Images/Scaling.png  used on input line 121.
@@ -742,7 +739,7 @@ Overfull \hbox (3.3825pt too wide) in paragraph at lines 5--6
  []
 
 )
-<Images/Rotation.png, id=251, 440.64626pt x 269.005pt>
+<Images/Rotation.png, id=266, 440.64626pt x 269.005pt>
 File: Images/Rotation.png Graphic file (type png)
 <use Images/Rotation.png>
 Package pdftex.def Info: Images/Rotation.png  used on input line 141.
@@ -756,18 +753,18 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 9.
 )
-<Images/Affine.png, id=276, 440.64626pt x 269.005pt>
+<Images/Affine.png, id=290, 440.64626pt x 269.005pt>
 File: Images/Affine.png Graphic file (type png)
 <use Images/Affine.png>
 Package pdftex.def Info: Images/Affine.png  used on input line 161.
 (pdftex.def)             Requested size: 165.02347pt x 100.74117pt.
-<Images/image_generator_output.png, id=279, 542.025pt x 722.7pt>
+<Images/image_generator_output.png, id=293, 542.025pt x 722.7pt>
 File: Images/image_generator_output.png Graphic file (type png)
 <use Images/image_generator_output.png>
 Package pdftex.def Info: Images/image_generator_output.png  used on input line 
 176.
 (pdftex.def)             Requested size: 165.02347pt x 220.0317pt.
-<Images/image_generator_term_output.png, id=280, 917.4275pt x 91.34125pt>
+<Images/image_generator_term_output.png, id=294, 917.4275pt x 91.34125pt>
 File: Images/image_generator_term_output.png Graphic file (type png)
 <use Images/image_generator_term_output.png>
 Package pdftex.def Info: Images/image_generator_term_output.png  used on input 
@@ -782,7 +779,7 @@ Overfull \hbox (3.91661pt too wide) in paragraph at lines 181--182
  <./Images/image_generator_term_output.png>]) [12]
 Poglavlje 3.
 (./Chapters/SSD.tex
-<Images/object_detection_output.jpg, id=320, 1356.06625pt x 903.375pt>
+<Images/object_detection_output.jpg, id=334, 1356.06625pt x 903.375pt>
 File: Images/object_detection_output.jpg Graphic file (type jpg)
 <use Images/object_detection_output.jpg>
 Package pdftex.def Info: Images/object_detection_output.jpg  used on input line
@@ -792,7 +789,7 @@ Package pdftex.def Info: Images/object_detection_output.jpg  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Images/vgg_architecture.png, id=325, 607.26875pt x 336.25626pt>
+<Images/vgg_architecture.png, id=339, 607.26875pt x 336.25626pt>
 File: Images/vgg_architecture.png Graphic file (type png)
 <use Images/vgg_architecture.png>
 Package pdftex.def Info: Images/vgg_architecture.png  used on input line 31.
@@ -803,70 +800,87 @@ Package pdftex.def Info: Images/vgg_architecture.png  used on input line 31.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Images/ssd_architecture.png, id=335, 977.6525pt x 277.035pt>
+<Images/ssd_architecture.png, id=349, 977.6525pt x 277.035pt>
 File: Images/ssd_architecture.png Graphic file (type png)
 <use Images/ssd_architecture.png>
 Package pdftex.def Info: Images/ssd_architecture.png  used on input line 45.
 (pdftex.def)             Requested size: 412.56497pt x 116.90767pt.
-[14 <./Images/object_detection_output.jpg>] [15 <./Images/vgg_architecture.png>
- <./Images/ssd_architecture.png (PNG copy)>]
-<Images/ssd_multibox.png, id=356, 1003.75pt x 372.39125pt>
-File: Images/ssd_multibox.png Graphic file (type png)
-<use Images/ssd_multibox.png>
-Package pdftex.def Info: Images/ssd_multibox.png  used on input line 74.
-(pdftex.def)             Requested size: 412.56497pt x 153.0621pt.
+[14 <./Images/object_detection_output.jpg>]
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--79
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 50.
 
- []
 
-[16 <./Images/ssd_multibox.png (PNG copy)>]) [17]
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 50.
+
+[15 <./Images/vgg_architecture.png> <./Images/ssd_architecture.png (PNG copy)>]
+) [16]
 Poglavlje 4.
-(./Chapters/Training.tex) (./FinalPaper.bbl [18
+(./Chapters/Training.tex
 
-]
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\dj' on input line 8.
+
+<Images/iou_equation.png, id=375, 602.25pt x 469.755pt>
+File: Images/iou_equation.png Graphic file (type png)
+<use Images/iou_equation.png>
+Package pdftex.def Info: Images/iou_equation.png  used on input line 15.
+(pdftex.def)             Requested size: 247.54149pt x 193.08104pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\dj' on input line 22.
+
+[17
+
+]) (./FinalPaper.bbl [18 <./Images/iou_equation.png>]
 Underfull \hbox (badness 1484) in paragraph at lines 18--21
 []\T1/lmr/m/n/12 Tfrecords vo-di£.  URL []$\T1/lmtt/m/n/12 http : / / warmsprin
 gwinds . github . io / tensorflow /
  []
 
 
-Underfull \hbox (badness 2884) in paragraph at lines 37--41
+Underfull \hbox (badness 2884) in paragraph at lines 34--38
 []\T1/lmr/m/n/12 Alexandre Gon-fa-lo-ni-eri.  How to bu-ild a data set for your
  mac-hine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--41
+Underfull \hbox (badness 10000) in paragraph at lines 34--38
 \T1/lmr/m/n/12 le-ar-ning pro-ject, 2019.  URL []$\T1/lmtt/m/n/12 https : / / t
 owardsdatascience . com /
  []
 
 
-Overfull \hbox (40.19637pt too wide) in paragraph at lines 37--41
+Overfull \hbox (40.19637pt too wide) in paragraph at lines 34--38
 \T1/lmtt/m/n/12 how-[]to-[]build-[]a-[]data-[]set-[]for-[]your-[]machine-[]lear
 ning-[]project-[]5b3b871881ac$[]\T1/lmr/m/n/12 . 
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 41.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
  [19
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
  (./FinalPaper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 41.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 41.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 42.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 42.
 Package rerunfilecheck Info: File `FinalPaper.out' has not changed.
-(rerunfilecheck)             Checksum: 0024F3D0F692F18EC74AFAA2B6490BE8;1596.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 41.
+(rerunfilecheck)             Checksum: 71655DF89E86CE73D09F7944CA35E522;1801.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 42.
  ) 
 Here is how much of TeX's memory you used:
- 11904 strings out of 492649
- 174143 string characters out of 6129622
+ 11907 strings out of 492649
+ 174196 string characters out of 6129622
  292519 words of memory out of 5000000
- 15431 multiletter control sequences out of 15000+600000
- 103882 words of font info for 77 fonts, out of 8000000 for 9000
+ 15432 multiletter control sequences out of 15000+600000
+ 108145 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,10n,49p,443b,1844s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
@@ -890,10 +904,10 @@ type1/public/lm/lmssbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pu
 blic/lm/lmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lm
 sy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></
 usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtto10.pfb>
-Output written on FinalPaper.pdf (23 pages, 2813433 bytes).
+Output written on FinalPaper.pdf (24 pages, 2600231 bytes).
 PDF statistics:
- 485 PDF objects out of 1000 (max. 8388607)
- 416 compressed objects within 5 object streams
- 121 named destinations out of 1000 (max. 500000)
- 263 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 499 PDF objects out of 1000 (max. 8388607)
+ 428 compressed objects within 5 object streams
+ 123 named destinations out of 1000 (max. 500000)
+ 279 words of extra memory for PDF output out of 10000 (max. 10000000)
 

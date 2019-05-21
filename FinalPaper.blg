@@ -13,57 +13,53 @@ Warning--entry type for "TFRecords" isn't style-file defined
 --line 40 of file literatura.bib
 Warning--entry type for "tensorflow.org" isn't style-file defined
 --line 45 of file literatura.bib
-Warning--entry type for "ssd2" isn't style-file defined
---line 81 of file literatura.bib
 Warning--to sort, need author or key in Keras.io
 Warning--to sort, need author or key in OpenCV
 Warning--to sort, need author or key in TFRecords
 Warning--to sort, need author or key in tensorflow.org
-Warning--to sort, need author or key in ssd2
 Warning--empty year in Keras.io
 Warning--empty year in OpenCV
 Warning--empty year in TFRecords
-Warning--empty year in ssd2
 Warning--empty year in tensorflow.org
-You've used 11 entries,
+You've used 10 entries,
             2773 wiz_defined-function locations,
-            644 strings with 6316 characters,
-and the built_in function-call counts, 3982 in all, are:
-= -- 352
+            643 strings with 6312 characters,
+and the built_in function-call counts, 3767 in all, are:
+= -- 336
 > -- 167
 < -- 6
-+ -- 62
++ -- 61
 - -- 51
-* -- 278
-:= -- 522
-add.period$ -- 30
-call.type$ -- 11
-change.case$ -- 48
-chr.to.int$ -- 11
-cite$ -- 37
-duplicate$ -- 210
-empty$ -- 402
+* -- 264
+:= -- 509
+add.period$ -- 29
+call.type$ -- 10
+change.case$ -- 46
+chr.to.int$ -- 10
+cite$ -- 32
+duplicate$ -- 195
+empty$ -- 367
 format.name$ -- 61
-if$ -- 884
+if$ -- 832
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 6
-newline$ -- 59
+newline$ -- 56
 num.names$ -- 24
-pop$ -- 152
+pop$ -- 138
 preamble$ -- 1
-purify$ -- 39
+purify$ -- 37
 quote$ -- 0
-skip$ -- 185
+skip$ -- 168
 stack$ -- 0
-substring$ -- 75
-swap$ -- 27
+substring$ -- 72
+swap$ -- 26
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 116
-warning$ -- 10
+type$ -- 105
+warning$ -- 8
 while$ -- 24
 width$ -- 0
-write$ -- 128
-(There were 16 warnings)
+write$ -- 122
+(There were 13 warnings)

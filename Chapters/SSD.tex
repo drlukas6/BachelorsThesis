@@ -10,7 +10,7 @@ No, nijedna od tih nije uspjela doseći gotovo "real-time" brzinu sa značajnom 
 	\includegraphics[width=1.0\linewidth]{object_detection_output}
 	 \caption{Tipični izlaz iz mreže za detekciju i klasifikaciju sa prikazanim kvadratima i klasama}
  	 \label{fig:ObjectDetectionOutput}
-\end{figure}
+\end{figure} \\
 Iako su spomenute mreže imale pokazivale impresivne rezultate, također su imale i nekolicinu problema:
 \begin{itemize}
 \item Više faza treniranja
@@ -47,41 +47,15 @@ Cijela arhitektura \emph{SSD} mreže vidljiva je na slici ~\ref{fig:SSDArchitect
  	 \label{fig:SSDArchitecture}
 \end{figure}
 Slojevi dodani na baznu mrežu dodani su s ciljem da proizvedu sljedeće značajke:
-\subsubsection{Detekcija značajki višestrukih veličina}
+\subsection{Detekcija značajki višestrukih veličina}
 Svaki dublji konvolucijski sloj postaje manji i time promatra značajke manje veličine.
 Konvolucijski model za predviđanje detekcija je drukčiji za svaki sloj.
-
-\subsubsection{Konvolucijsko predviđanje za detekciju}
-Za precizniju detekciju, različiti slojevi također prolaze kroz $3\times3$ konvoluciju kao što je prikazano na slici ~\ref{fig:SSDArchitecture}. \\
-Uzmimo na primjer sloj \texttt{Conv4\_3}.
-Veličina sloja je $38\times38\times512$. 
-Na isti primjenjujemo konvoluciju veličine $3\times3$.
-Imamo 4 kvadrata i svaki ima $klase + 4$ izlaza.
-Točnije, izlaz sloja \texttt{Conv4\_3} oblika je $38\times38\times4\times(klase + 4)$. \\
-U mom slučaju, to bi bilo $38\times38\times4\times(14 + 4)$ tj. $103968$ izlaza, bez računanja klasa, dobili smo $5776$ kvadrata.
-Isti postupak nastavlja se dalje na dublje slojeve (\cite{ssd2}).
-
-\section{MultiBox tehnika}
-\emph{MultiBox} je tehnika za regresiju kvadrata koji ograničavaju poziciju objekta na slici.
-Pretpostavljamo da smo trening podatke pripremili na način da sadrže točne koordinate kvadrata objekta.
-Nakon što prođemo određeni broj konvolucija za izvlačenje značajki, dobivamo sloj veličine \texttt{mxnxp} (Slika: ~\ref{fig:SSDMultiBox}).
-Za svako polje dobivamo \texttt{k} pretpostavljenih kvadrata. \\
-Koncept je sljedeći. 
-Uspravni kvadrat prikladan je npr. za znamenku "1" na slici, dok je za znamenku "4" ili simbol "+" prikladniji kvadrat kvadratnog oblika.
-Za svaki računamo \texttt{x} vrijednosti za klase i 4 pomaka relativna originalnom, te dobivamo $(c + 4)\times k \times m \times n$ izlaza.
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=1.0\linewidth]{ssd_multibox}
-	 \caption{Višestruki kvadrati za lokalizaciju i pouzdanje}
- 	 \label{fig:SSDMultiBox}
-\end{figure}
-Kako izračunati kvalitetu lokalizacije i pouzdanje klasifikacije? \\
-\subsection{Lokalizacijski gubitak}
-\emph{SSD} za izračun lokalizacijskog gubitka koristi \emph{L1-Norm}
-$$|d|_\text{smooth} == \begin{cases}0.5d^2, &\text{ako}\  |d| \leq{1} \\ |d|-0.5, & \text{inače}\end{cases}$$
-Iako nije precizan kao \emph{L2-Norm}, iznimno je efektivan i ispunjava svrhu \emph{SSD}-a koji se ne trudi biti točan u pixel.
-\subsection{Klasifikacijski gubitak}
+\subsubsection{Lokalizacijski gubitak}
+Za izračun lokalizacijskog gubitka \emph{SSD} mreža koristi \emph{glatki L1-norm}.
+Iako nije precizan kao \emph{L2-norm}, za potrebe \emph{SSD}-a koji se ne trudi biti precizan u "pixel". \\
+L1-Norm: 
+$$| d |_{\text{smooth}} = =   \begin{cases} 0.5 d^2, & \text{ako}\ | d  | \leq 1 \\ | d | - 0.5, & \text{inače} \end{cases} $$
+\subsubsection{Klasifikacijski gubitak}
 Za svaki dan kvadrat, \emph{SSD} vrši klasifikaciju, te računa \emph{softmax}. \\
 \emph{Softmax} se koristi kao standard kada imamo više od dvije klase jer sve dobivene vrijednosti stavlja u rang $[0, 1]$ uz sumu svih koja je jednaka $1$.
 $$softmax(a)=\frac{\exp{a_i}}{\sum{a_i}}$$
-

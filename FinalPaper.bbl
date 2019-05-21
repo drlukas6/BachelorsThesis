@@ -1,4 +1,4 @@
-\begin{thebibliography}{11}
+\begin{thebibliography}{10}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -18,9 +18,6 @@ Opencv-python dokumentacija.
 Tfrecords vodič.
 \newblock URL
   \url{http://warmspringwinds.github.io/tensorflow/tf-slim/2016/12/21/tfrecords-guide/}.
-
-\bibitem[ssd()]{ssd2}
-
 
 \bibitem[ten()]{tensorflow.org}
 Tensorflow službena stranica.
