@@ -22,5 +22,10 @@ To višestruko olakšava treniranje jer mreža zadržava više pretpostavljenih 
 \subsection{Određivanje parametara za nastavak treniranja}
 Određivanje parametara bilo bi puno lakše kada bismo imali samo jedan objekt za klasificirati, no postaje kompliciranije sa više objekata.
 Uzmimo $x^p_{ij}=\{1,0\}$ kao indikator za podudaranje $i$-tog pretpostavljenog kvadrata na $j$-ti "ground truth" kvadrat kategorije $p$.
-Koristeći spomenutu strategiju određivanja pozicije objekata može nam se dogoditi situacija $\sum_i{x_{ij}^p} \geq 1$.
-
+Koristeći spomenutu strategiju određivanja pozicije objekata može nam se dogoditi situacija $\sum_i{x_{ij}^p} \geq 1$. \\
+Ukupna funkcija gubitka računa se kao otežana suma lokalizacijskog (\emph{loc}) i klasifikacijskog (\emph{conf}) gubitka:
+$$L(x,c,l,g)=\frac{1}{N}(L_{conf}(x,c)+\alpha L_{loc}(x,l,g))$$
+$N$ nam predstavlja broj "pogođenih" pretpostavljenih kvadrata. Naravno, ako je $N=0$, postavimo da je gubitak također $=0$.
+\subsubsection{Lokalizacijski gubitak (\emph{loc})}
+Za izračun lokalizacijskog gubitka koristimo \emph{Smooth L1} između predviđenih i "ground truth" kvadrata.
+$$L_{loc}(x,l,g)=\sum_{i\in Pos\ m \in\ (cx, cy, w, h)}^{N} \ \sum x_{ij}^k\ smooth_{L1}(l_i^m - \hat g_j^m)$$
