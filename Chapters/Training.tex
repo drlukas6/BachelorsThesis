@@ -29,3 +29,6 @@ $N$ nam predstavlja broj "pogođenih" pretpostavljenih kvadrata. Naravno, ako je
 \subsubsection{Lokalizacijski gubitak (\emph{loc})}
 Za izračun lokalizacijskog gubitka koristimo \emph{Smooth L1} između predviđenih i "ground truth" kvadrata.
 $$L_{loc}(x,l,g)=\sum_{i\in Pos\ m \in\ (cx, cy, w, h)}^{N} \ \sum x_{ij}^k\ smooth_{L1}(l_i^m - \hat g_j^m)$$
+\subsubsection{Klasifikacijski gubitak (\emph{conf})}
+Klasifikacijski gubitak računa se kao \emph{softmax} svih klasa koje podržavamo. 
+$$L_{conf}(x,c)=-\sum_{i \in Pos}^N x_{ij}^p \log(\hat c_i^0) - \sum_{i \in Neg} \log(\hat c_i^0 ) \ {gdje} \ \hat c_i^p=\frac{\exp(c_i^p)}{\sum_p \exp(c_i^p)}$$

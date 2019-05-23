@@ -47,18 +47,3 @@ Cijela arhitektura \emph{SSD} mreže vidljiva je na slici ~\ref{fig:SSDArchitect
  	 \label{fig:SSDArchitecture}
 \end{figure}
 Slojevi dodani na baznu mrežu dodani su s ciljem da proizvedu sljedeće značajke:
-\subsection{Detekcija značajki višestrukih veličina}
-Svaki dublji konvolucijski sloj postaje manji i time promatra značajke manje veličine.
-Konvolucijski model za predviđanje detekcija je drukčiji za svaki sloj.
-
-Ovaj dio nadalje možda u trening poglavlje??
-
-\subsubsection{Lokalizacijski gubitak}
-Za izračun lokalizacijskog gubitka \emph{SSD} mreža koristi \emph{glatki L1-norm}.
-Iako nije precizan kao \emph{L2-norm}, za potrebe \emph{SSD}-a koji se ne trudi biti precizan u "pixel". \\
-L1-Norm: 
-$$| d |_{\text{smooth}} = =   \begin{cases} 0.5 d^2, & \text{ako}\ | d  | \leq 1 \\ | d | - 0.5, & \text{inače} \end{cases} $$
-\subsubsection{Klasifikacijski gubitak}
-Za svaki dan kvadrat, \emph{SSD} vrši klasifikaciju, te računa \emph{softmax}. \\
-\emph{Softmax} se koristi kao standard kada imamo više od dvije klase jer sve dobivene vrijednosti stavlja u rang $[0, 1]$ uz sumu svih koja je jednaka $1$.
-$$softmax(a)=\frac{\exp{a_i}}{\sum{a_i}}$$

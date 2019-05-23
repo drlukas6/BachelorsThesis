@@ -23,13 +23,12 @@
 \contentsline {section}{\numberline {3.2}Arhitektura}{14}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}VGG-16 arhitektura}{14}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}SSD arhitektura}{15}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Detekcija zna\IeC {\v c}ajki vi\IeC {\v s}estrukih veli\IeC {\v c}ina}{16}{subsection.3.2.3}
-\contentsline {subsubsection}{Lokalizacijski gubitak}{16}{section*.19}
-\contentsline {subsubsection}{Klasifikacijski gubitak}{16}{section*.20}
-\contentsline {chapter}{\numberline {4}Trening}{17}{chapter.4}
-\contentsline {section}{\numberline {4.1}Treniranje SSD neuronske mre\IeC {\v z}e}{17}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Visoki pogled na treniranje}{17}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Odre\IeC {\dj }ivanje pozicije objekata}{17}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Odre\IeC {\dj }ivanje parametara za nastavak treniranja}{18}{subsection.4.1.3}
-\contentsline {subsubsection}{Lokalizacijski gubitak (\emph {loc})}{18}{section*.22}
-\contentsline {chapter}{Literatura}{19}{chapter*.23}
+\contentsline {chapter}{\numberline {4}Trening}{16}{chapter.4}
+\contentsline {section}{\numberline {4.1}Treniranje SSD neuronske mre\IeC {\v z}e}{16}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Visoki pogled na treniranje}{16}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Odre\IeC {\dj }ivanje pozicije objekata}{16}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Odre\IeC {\dj }ivanje parametara za nastavak treniranja}{17}{subsection.4.1.3}
+\contentsline {subsubsection}{Lokalizacijski gubitak (\emph {loc})}{17}{section*.20}
+\contentsline {subsubsection}{Klasifikacijski gubitak (\emph {conf})}{17}{section*.21}
+\contentsline {chapter}{\numberline {5}Rezultati}{19}{chapter.5}
+\contentsline {chapter}{Literatura}{20}{chapter*.22}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.11)  21 MAY 2019 23:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.11)  24 MAY 2019 00:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -805,26 +805,15 @@ File: Images/ssd_architecture.png Graphic file (type png)
 <use Images/ssd_architecture.png>
 Package pdftex.def Info: Images/ssd_architecture.png  used on input line 45.
 (pdftex.def)             Requested size: 412.56497pt x 116.90767pt.
-[14 <./Images/object_detection_output.jpg>]
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 50.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 50.
-
-[15 <./Images/vgg_architecture.png> <./Images/ssd_architecture.png (PNG copy)>]
-) [16]
+) [14 <./Images/object_detection_output.jpg>] [15 <./Images/vgg_architecture.pn
+g> <./Images/ssd_architecture.png (PNG copy)>]
 Poglavlje 4.
 (./Chapters/Training.tex
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\dj' on input line 8.
 
-<Images/iou_equation.png, id=375, 602.25pt x 469.755pt>
+<Images/iou_equation.png, id=368, 602.25pt x 469.755pt>
 File: Images/iou_equation.png Graphic file (type png)
 <use Images/iou_equation.png>
 Package pdftex.def Info: Images/iou_equation.png  used on input line 15.
@@ -836,9 +825,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\dj' on input line 22.
 
-[17
+[16
 
-]) (./FinalPaper.bbl [18 <./Images/iou_equation.png>]
+]) [17 <./Images/iou_equation.png>] [18]
+Poglavlje 5.
+(./Chapters/Results.tex) (./FinalPaper.bbl [19
+
+]
 Underfull \hbox (badness 1484) in paragraph at lines 18--21
 []\T1/lmr/m/n/12 Tfrecords vo-di£.  URL []$\T1/lmtt/m/n/12 http : / / warmsprin
 gwinds . github . io / tensorflow /
@@ -863,24 +856,24 @@ ning-[]project-[]5b3b871881ac$[]\T1/lmr/m/n/12 .
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
- [19
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
+ [20
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
  (./FinalPaper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 42.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 42.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 45.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 45.
 Package rerunfilecheck Info: File `FinalPaper.out' has not changed.
-(rerunfilecheck)             Checksum: 200670A9E11F3CB223F25E33D2899A54;1801.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 42.
+(rerunfilecheck)             Checksum: B429D8E2962413A8C7A5CA52F56E9E3A;1750.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 45.
  ) 
 Here is how much of TeX's memory you used:
- 11910 strings out of 492649
- 174232 string characters out of 6129622
+ 11909 strings out of 492649
+ 174225 string characters out of 6129622
  292519 words of memory out of 5000000
- 15433 multiletter control sequences out of 15000+600000
- 112416 words of font info for 79 fonts, out of 8000000 for 9000
+ 15431 multiletter control sequences out of 15000+600000
+ 106436 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,10n,49p,443b,1844s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
@@ -905,10 +898,10 @@ lic/lm/lmssbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/l
 msy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><
 /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local
 /texlive/2018/texmf-dist/fonts/type1/public/lm/lmtto10.pfb>
-Output written on FinalPaper.pdf (24 pages, 2614467 bytes).
+Output written on FinalPaper.pdf (25 pages, 2606498 bytes).
 PDF statistics:
- 504 PDF objects out of 1000 (max. 8388607)
- 432 compressed objects within 5 object streams
+ 506 PDF objects out of 1000 (max. 8388607)
+ 433 compressed objects within 5 object streams
  124 named destinations out of 1000 (max. 500000)
  279 words of extra memory for PDF output out of 10000 (max. 10000000)
 

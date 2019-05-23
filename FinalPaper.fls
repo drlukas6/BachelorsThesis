@@ -277,8 +277,6 @@ INPUT ./Images/vgg_architecture.png
 INPUT Images/ssd_architecture.png
 INPUT ./Images/ssd_architecture.png
 INPUT ./Images/ssd_architecture.png
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT Chapters/Training.tex
 INPUT Chapters/Training.tex
 INPUT Images/iou_equation.png
@@ -286,6 +284,8 @@ INPUT ./Images/iou_equation.png
 INPUT ./Images/iou_equation.png
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmbxi10.tfm
+INPUT Chapters/Results.tex
+INPUT Chapters/Results.tex
 INPUT FinalPaper.bbl
 INPUT FinalPaper.bbl
 INPUT FinalPaper.aux
