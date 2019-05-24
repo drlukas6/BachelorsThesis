@@ -31,4 +31,7 @@
 \contentsline {subsubsection}{Lokalizacijski gubitak (\emph {loc})}{17}{section*.20}
 \contentsline {subsubsection}{Klasifikacijski gubitak (\emph {conf})}{17}{section*.21}
 \contentsline {chapter}{\numberline {5}Rezultati}{19}{chapter.5}
-\contentsline {chapter}{Literatura}{20}{chapter*.22}
+\contentsline {section}{\numberline {5.1}Opis rezultata}{19}{section.5.1}
+\contentsline {section}{\numberline {5.2}Prikaz rezultata}{19}{section.5.2}
+\contentsline {section}{\numberline {5.3}\emph {Tensorboard} rezultati}{21}{section.5.3}
+\contentsline {chapter}{Literatura}{23}{chapter*.26}

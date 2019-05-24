@@ -23,4 +23,7 @@
 \BOOKMARK [2][-]{subsection.4.1.2}{Odreivanje pozicije objekata}{section.4.1}% 23
 \BOOKMARK [2][-]{subsection.4.1.3}{Odreivanje parametara za nastavak treniranja}{section.4.1}% 24
 \BOOKMARK [0][-]{chapter.5}{Rezultati}{}% 25
-\BOOKMARK [0][-]{chapter*.22}{Literatura}{}% 26
+\BOOKMARK [1][-]{section.5.1}{Opis rezultata}{chapter.5}% 26
+\BOOKMARK [1][-]{section.5.2}{Prikaz rezultata}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.3}{Tensorboard rezultati}{chapter.5}% 28
+\BOOKMARK [0][-]{chapter*.26}{Literatura}{}% 29
