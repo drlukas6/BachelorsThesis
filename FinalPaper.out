@@ -14,14 +14,14 @@
 \BOOKMARK [1][-]{section.2.3}{TFRecords}{chapter.2}% 14
 \BOOKMARK [0][-]{chapter.3}{Single Shot MultiBox Detector mre\236a}{}% 15
 \BOOKMARK [1][-]{section.3.1}{Za\235to je nastala SSD mre\236a}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.2}{Arhitektura}{chapter.3}% 17
-\BOOKMARK [2][-]{subsection.3.2.1}{VGG-16 arhitektura}{section.3.2}% 18
-\BOOKMARK [2][-]{subsection.3.2.2}{SSD arhitektura}{section.3.2}% 19
-\BOOKMARK [0][-]{chapter.4}{Trening}{}% 20
-\BOOKMARK [1][-]{section.4.1}{Treniranje SSD neuronske mre\236e}{chapter.4}% 21
-\BOOKMARK [2][-]{subsection.4.1.1}{Visoki pogled na treniranje}{section.4.1}% 22
+\BOOKMARK [1][-]{section.3.2}{Arhitekture kori\235tenih mre\236a}{chapter.3}% 17
+\BOOKMARK [2][-]{subsection.3.2.1}{Arhitektura VGG-16}{section.3.2}% 18
+\BOOKMARK [2][-]{subsection.3.2.2}{Arhitektura SSD}{section.3.2}% 19
+\BOOKMARK [0][-]{chapter.4}{Ucenje}{}% 20
+\BOOKMARK [1][-]{section.4.1}{Ucenje SSD neuronske mre\236e}{chapter.4}% 21
+\BOOKMARK [2][-]{subsection.4.1.1}{Visoki pogled na ucenje}{section.4.1}% 22
 \BOOKMARK [2][-]{subsection.4.1.2}{Odreivanje pozicije objekata}{section.4.1}% 23
-\BOOKMARK [2][-]{subsection.4.1.3}{Odreivanje parametara za nastavak treniranja}{section.4.1}% 24
+\BOOKMARK [2][-]{subsection.4.1.3}{Odreivanje parametara za nastavak ucenja}{section.4.1}% 24
 \BOOKMARK [0][-]{chapter.5}{Rezultati}{}% 25
 \BOOKMARK [1][-]{section.5.1}{Opis rezultata}{chapter.5}% 26
 \BOOKMARK [1][-]{section.5.2}{Prikaz rezultata}{chapter.5}% 27

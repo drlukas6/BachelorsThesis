@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.11)  9 JUN 2019 23:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.11)  10 JUN 2019 01:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -478,7 +478,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.145 ...and\NAT@force@numbers{}\NAT@force@numbers
+l.151 ...and\NAT@force@numbers{}\NAT@force@numbers
                                                   
 ? 
 )
@@ -841,12 +841,27 @@ Package pdftex.def Info: Images/ssd_architecture.png  used on input line 45.
 ) [16 <./Images/object_detection_output.jpg>] [17 <./Images/vgg_architecture.pn
 g> <./Images/ssd_architecture.png (PNG copy)>]
 Poglavlje 4.
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 36.
+
 (./Chapters/Training.tex
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 2.
+
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\dj' on input line 8.
 
-<Images/iou_equation.png, id=384, 602.25pt x 469.755pt>
+<Images/iou_equation.png, id=385, 602.25pt x 469.755pt>
 File: Images/iou_equation.png Graphic file (type png)
 <use Images/iou_equation.png>
 Package pdftex.def Info: Images/iou_equation.png  used on input line 15.
@@ -858,117 +873,102 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\dj' on input line 22.
 
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 22.
+
 [18
 
-]) [19 <./Images/iou_equation.png>] [20]
+]) [19 <./Images/iou_equation.png>]
 Poglavlje 5.
 (./Chapters/Results.tex
-<Images/false_positive.png, id=405, 542.025pt x 722.7pt>
+<Images/false_positive.png, id=407, 542.025pt x 722.7pt>
 File: Images/false_positive.png Graphic file (type png)
 <use Images/false_positive.png>
 Package pdftex.def Info: Images/false_positive.png  used on input line 17.
-(pdftex.def)             Requested size: 206.28249pt x 275.03687pt.
-<Images/three.png, id=406, 698.61pt x 907.39pt>
+(pdftex.def)             Requested size: 185.65297pt x 247.53429pt.
+<Images/three.png, id=408, 698.61pt x 907.39pt>
 File: Images/three.png Graphic file (type png)
 <use Images/three.png>
-Package pdftex.def Info: Images/three.png  used on input line 21.
-(pdftex.def)             Requested size: 206.28249pt x 267.92696pt.
-
-Overfull \hbox (7.83322pt too wide) in paragraph at lines 17--22
-[][][][][][] 
- []
-
-<Images/first_generated_eqn.png, id=409, 721.2546pt x 930.8376pt>
+Package pdftex.def Info: Images/three.png  used on input line 22.
+(pdftex.def)             Requested size: 185.65297pt x 241.13564pt.
+<Images/first_generated_eqn.png, id=411, 721.2546pt x 930.8376pt>
 File: Images/first_generated_eqn.png Graphic file (type png)
 <use Images/first_generated_eqn.png>
-Package pdftex.def Info: Images/first_generated_eqn.png  used on input line 29.
+Package pdftex.def Info: Images/first_generated_eqn.png  used on input line 30.
 
-(pdftex.def)             Requested size: 206.28249pt x 266.21469pt.
+(pdftex.def)             Requested size: 185.65297pt x 239.59749pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 29.
-<Images/last_generated_eqn.png, id=410, 707.5233pt x 921.4425pt>
+(Font)              <5> on input line 30.
+<Images/last_generated_eqn.png, id=412, 707.5233pt x 921.4425pt>
 File: Images/last_generated_eqn.png Graphic file (type png)
 <use Images/last_generated_eqn.png>
-Package pdftex.def Info: Images/last_generated_eqn.png  used on input line 33.
-(pdftex.def)             Requested size: 206.28249pt x 268.64561pt.
-
-Overfull \hbox (7.83322pt too wide) in paragraph at lines 29--34
-[][][][][][] 
- []
-
-<Images/handwritten.png, id=412, 1219.1949pt x 924.3333pt>
+Package pdftex.def Info: Images/last_generated_eqn.png  used on input line 35.
+(pdftex.def)             Requested size: 185.65297pt x 241.77682pt.
+<Images/handwritten.png, id=414, 1219.1949pt x 924.3333pt>
 File: Images/handwritten.png Graphic file (type png)
 <use Images/handwritten.png>
-Package pdftex.def Info: Images/handwritten.png  used on input line 37.
+Package pdftex.def Info: Images/handwritten.png  used on input line 39.
 (pdftex.def)             Requested size: 206.28249pt x 156.38705pt.
-[21
+ [20
 
-] [22pdfTeX warning (ext4): destination with the same identifier (name{subfigur
+] [21pdfTeX warning (ext4): destination with the same identifier (name{subfigur
 e.5.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.41 \section
+l.43 \section
              {\emph{Tensorboard} rezultati}pdfTeX warning (ext4): destination w
 ith the same identifier (name{subfigure.5.1.2}) has been already used, duplicat
 e ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.41 \section
+l.43 \section
              {\emph{Tensorboard} rezultati} <./Images/false_positive.png (PNG c
 opy)> <./Images/three.png> <./Images/first_generated_eqn.png> <./Images/last_ge
 nerated_eqn.png>]
-<Images/losses.png, id=430, 1087.06125pt x 700.6175pt>
+<Images/losses.png, id=434, 1087.06125pt x 700.6175pt>
 File: Images/losses.png Graphic file (type png)
 <use Images/losses.png>
-Package pdftex.def Info: Images/losses.png  used on input line 49.
+Package pdftex.def Info: Images/losses.png  used on input line 51.
 (pdftex.def)             Requested size: 412.56497pt x 265.906pt.
-<Images/total_loss.png, id=431, 1041.8925pt x 384.43625pt>
+<Images/total_loss.png, id=435, 1041.8925pt x 384.43625pt>
 File: Images/total_loss.png Graphic file (type png)
 <use Images/total_loss.png>
-Package pdftex.def Info: Images/total_loss.png  used on input line 53.
+Package pdftex.def Info: Images/total_loss.png  used on input line 55.
 (pdftex.def)             Requested size: 412.56497pt x 152.229pt.
 
-Overfull \hbox (3.91661pt too wide) in paragraph at lines 49--54
+Overfull \hbox (3.91661pt too wide) in paragraph at lines 51--56
 [][] 
  []
 
 
-Overfull \hbox (3.91661pt too wide) in paragraph at lines 49--54
+Overfull \hbox (3.91661pt too wide) in paragraph at lines 51--56
 [][][][] 
  []
 
-) (./FinalPaper.bbl [23 <./Images/handwritten.png>] [24 <./Images/losses.png> <
+) (./FinalPaper.bbl [22 <./Images/handwritten.png>] [23 <./Images/losses.png> <
 ./Images/total_loss.png>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
- [25
+ [24
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
  (./FinalPaper.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 45.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 45.
-
-
-Package rerunfilecheck Warning: File `FinalPaper.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `FinalPaper.out':
-(rerunfilecheck)             Before: E9B6E0813B39515AA574CA738295AD5E;1942
-(rerunfilecheck)             After:  4DC433E6F14544500267E097D7A5AEC0;1943.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `FinalPaper.out' has not changed.
+(rerunfilecheck)             Checksum: 08B6B1BBB76F2248799E12FCA6F4A757;1953.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 45.
  ) 
 Here is how much of TeX's memory you used:
- 11991 strings out of 492649
- 175763 string characters out of 6129622
- 297680 words of memory out of 5000000
- 15484 multiletter control sequences out of 15000+600000
- 114706 words of font info for 83 fonts, out of 8000000 for 9000
+ 11997 strings out of 492649
+ 175856 string characters out of 6129622
+ 297889 words of memory out of 5000000
+ 15488 multiletter control sequences out of 15000+600000
+ 118977 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,10n,49p,390b,1972s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
@@ -993,10 +993,10 @@ lic/lm/lmssbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/l
 msy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><
 /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local
 /texlive/2018/texmf-dist/fonts/type1/public/lm/lmtto10.pfb>
-Output written on FinalPaper.pdf (30 pages, 6360735 bytes).
+Output written on FinalPaper.pdf (29 pages, 6361090 bytes).
 PDF statistics:
- 554 PDF objects out of 1000 (max. 8388607)
- 463 compressed objects within 5 object streams
- 141 named destinations out of 1000 (max. 500000)
+ 557 PDF objects out of 1000 (max. 8388607)
+ 467 compressed objects within 5 object streams
+ 143 named destinations out of 1000 (max. 500000)
  338 words of extra memory for PDF output out of 10000 (max. 10000000)
 
