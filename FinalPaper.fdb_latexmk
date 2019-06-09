@@ -1,11 +1,11 @@
 # Fdb version 3
-["bibtex FinalPaper"] 1558657480 "FinalPaper.aux" "FinalPaper.bbl" "FinalPaper" 1558657507
-  "./fer.bst" 1284154898 26009 c9fe7ac62e814ee4c7bb7b0cdf6bf7a5 ""
-  "FinalPaper.aux" 1558657506 12423 a39e890b3c63b3aefe22a510a8a8abbf ""
-  "literatura.bib" 1558470927 2576 dd0004cccf55737135bd464bd36a2f8c ""
+["bibtex FinalPaper"] 1560115242 "FinalPaper.aux" "FinalPaper.bbl" "FinalPaper" 1560117207
+  "/usr/local/texlive/2018/texmf-dist/bibtex/bst/base/ieeetr.bst" 1480098433 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
+  "FinalPaper.aux" 1560115248 12359 3ac89bca257169ba6667f748c23d0891 ""
+  "literatura.bib" 1560114871 2706 f57c37e9498a9cc495a298661f33cf22 ""
   (generated)
-  "FinalPaper.blg"
   "FinalPaper.bbl"
+  "FinalPaper.blg"
 ["latex"] 1556267131 "FinalPaper.tex" "FinalPaper.dvi" "FinalPaper" 1556267131
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1480098696 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
@@ -91,9 +91,9 @@
   (generated)
   "FinalPaper.toc"
   "FinalPaper.log"
-  "FinalPaper.aux"
   "FinalPaper.dvi"
-["pdflatex"] 1558657502 "FinalPaper.tex" "FinalPaper.pdf" "FinalPaper" 1558657507
+  "FinalPaper.aux"
+["pdflatex"] 1560117207 "FinalPaper.tex" "FinalPaper.pdf" "FinalPaper" 1560117207
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1480098668 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1480098668 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1480098668 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -235,19 +235,19 @@
   "/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1523934492 2717033 f61a5287d9c22a39a74f1979fe3f905c ""
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1547164587 4220280 b8a3b9bb2ab166edc053a8516535c4ad ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
-  "Chapters/GeneriranjeSlika.tex" 1558201029 12144 0c9d3f1d343fbdaf48053a78f4ee0244 ""
-  "Chapters/Results.tex" 1558657501 3989 ac2d1704fabb4783cf50c930d02dfcce ""
+  "Chapters/GeneriranjeSlika.tex" 1560117205 12172 e65e85b847115c85105eaa6d3562e75a ""
+  "Chapters/Results.tex" 1558657568 3989 ac2d1704fabb4783cf50c930d02dfcce ""
   "Chapters/SSD.tex" 1558647992 3563 29b92e18e6d70b31df8b2b2c7ae65b19 ""
   "Chapters/Training.tex" 1558649212 3239 b6d2d8e8bbdf0fb87407c2346b05d2a7 ""
-  "Chapters/Uvod.tex" 1558261162 5045 cf12ec54d4e3ed86c1cfab1c0448e725 ""
+  "Chapters/Uvod.tex" 1560115396 5032 de476436fe6991abe58b796617b26ddc ""
   "CodeSamples/Affine.py" 1557137425 595 ab7d4b1f596b816be9632f0ba42c563a ""
   "CodeSamples/Rotation.py" 1556381641 259 697253e7f6e98d0a38a78631f73c1cd7 ""
   "CodeSamples/Scaling.py" 1556381639 157 bab1e69db4236c0cfb494e44ca0d4747 ""
-  "FinalPaper.aux" 1558657506 12423 a39e890b3c63b3aefe22a510a8a8abbf ""
-  "FinalPaper.bbl" 1558657480 2365 7364c1a2c559aa06f41db81c6b01b830 "bibtex FinalPaper"
-  "FinalPaper.out" 1558657506 1942 e9b6e0813b39515aa574ca738295ad5e ""
-  "FinalPaper.tex" 1558651717 1003 5741e61422b8b4eb39f893b51369746a ""
-  "FinalPaper.toc" 1558657506 3012 1fc77ee43aeafbf2426a757eb00d603f ""
+  "FinalPaper.aux" 1560115248 12359 3ac89bca257169ba6667f748c23d0891 ""
+  "FinalPaper.bbl" 1560115242 1309 720b17632c1989de4876e8618abe4fd9 "bibtex FinalPaper"
+  "FinalPaper.out" 1560115248 1942 e9b6e0813b39515aa574ca738295ad5e ""
+  "FinalPaper.tex" 1560115416 1007 26237f661fed34cfc9524839700efa7c ""
+  "FinalPaper.toc" 1560115248 3013 f233e401c7c008dd0940267c71c4b911 ""
   "Images/Affine.png" 1556389704 16969 5b47c21b707bb74bcc8df85311736dba ""
   "Images/Rotation.png" 1556389704 17970 b6863f3b1e9ea3e9ff6906a826178b41 ""
   "Images/Scaling.png" 1556389704 24802 4c4eb721900160f294f4137ddb0c1b8a ""
@@ -271,8 +271,8 @@
   "Images/vgg_architecture.png" 1558208165 133674 a82c6c15dec068ddba7e2b35476dd10e ""
   "fer.cls" 1284154996 10145 76761193ed91b0ce7a5a85bc13f7191d ""
   (generated)
-  "FinalPaper.aux"
-  "FinalPaper.pdf"
   "FinalPaper.log"
-  "FinalPaper.out"
   "FinalPaper.toc"
+  "FinalPaper.aux"
+  "FinalPaper.out"
+  "FinalPaper.pdf"

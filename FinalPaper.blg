@@ -1,65 +1,59 @@
 This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: FinalPaper.aux
-The style file: fer.bst
+The style file: ieeetr.bst
 Database file #1: literatura.bib
+Warning--entry type for "ConvNet" isn't style-file defined
+--line 6 of file literatura.bib
 Warning--entry type for "generalDatasets" isn't style-file defined
---line 13 of file literatura.bib
+--line 18 of file literatura.bib
 Warning--entry type for "Keras.io" isn't style-file defined
---line 30 of file literatura.bib
-Warning--entry type for "OpenCV" isn't style-file defined
 --line 35 of file literatura.bib
-Warning--entry type for "TFRecords" isn't style-file defined
+Warning--entry type for "OpenCV" isn't style-file defined
 --line 40 of file literatura.bib
-Warning--entry type for "tensorflow.org" isn't style-file defined
+Warning--entry type for "TFRecords" isn't style-file defined
 --line 45 of file literatura.bib
-Warning--to sort, need author or key in Keras.io
-Warning--to sort, need author or key in OpenCV
-Warning--to sort, need author or key in TFRecords
-Warning--to sort, need author or key in tensorflow.org
-Warning--empty year in Keras.io
-Warning--empty year in OpenCV
-Warning--empty year in TFRecords
-Warning--empty year in tensorflow.org
-You've used 10 entries,
-            2773 wiz_defined-function locations,
-            643 strings with 6312 characters,
-and the built_in function-call counts, 3767 in all, are:
-= -- 336
-> -- 167
-< -- 6
-+ -- 61
-- -- 51
-* -- 264
-:= -- 509
-add.period$ -- 29
-call.type$ -- 10
-change.case$ -- 46
-chr.to.int$ -- 10
-cite$ -- 32
-duplicate$ -- 195
-empty$ -- 367
-format.name$ -- 61
-if$ -- 832
-int.to.chr$ -- 1
-int.to.str$ -- 1
+Warning--entry type for "tensorflow.org" isn't style-file defined
+--line 50 of file literatura.bib
+You've used 11 entries,
+            1876 wiz_defined-function locations,
+            522 strings with 4572 characters,
+and the built_in function-call counts, 1770 in all, are:
+= -- 146
+> -- 66
+< -- 0
++ -- 28
+- -- 17
+* -- 92
+:= -- 234
+add.period$ -- 7
+call.type$ -- 11
+change.case$ -- 10
+chr.to.int$ -- 0
+cite$ -- 11
+duplicate$ -- 89
+empty$ -- 231
+format.name$ -- 17
+if$ -- 446
+int.to.chr$ -- 0
+int.to.str$ -- 11
 missing$ -- 6
-newline$ -- 56
-num.names$ -- 24
-pop$ -- 138
+newline$ -- 37
+num.names$ -- 6
+pop$ -- 64
 preamble$ -- 1
-purify$ -- 37
+purify$ -- 0
 quote$ -- 0
-skip$ -- 168
+skip$ -- 72
 stack$ -- 0
-substring$ -- 72
-swap$ -- 26
-text.length$ -- 2
+substring$ -- 48
+swap$ -- 17
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 105
-warning$ -- 8
-while$ -- 24
-width$ -- 0
-write$ -- 122
-(There were 13 warnings)
+type$ -- 0
+warning$ -- 0
+while$ -- 12
+width$ -- 13
+write$ -- 78
+(There were 6 warnings)

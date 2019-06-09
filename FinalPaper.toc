@@ -4,34 +4,34 @@
 \contentsline {section}{\numberline {1.2}Ra\IeC {\v c}unalni vid}{1}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Pregled}{1}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}Konvolucijske neuronske mre\IeC {\v z}e}{2}{subsection.1.2.2}
-\contentsline {chapter}{\numberline {2}Generiranje seta podataka}{4}{chapter.2}
-\contentsline {section}{\numberline {2.1}Zna\IeC {\v c}aj podataka u dubokom u\IeC {\v c}enju}{4}{section.2.1}
-\contentsline {subsubsection}{Prikupljanje podataka}{4}{section*.4}
-\contentsline {subsubsection}{Klasifikacija i ozna\IeC {\v c}avanje podataka}{4}{section*.5}
-\contentsline {section}{\numberline {2.2}Generiranje slika}{5}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Generalizacija postupka}{5}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Prikupljanje fontova}{6}{subsection.2.2.2}
+\contentsline {chapter}{\numberline {2}Generiranje skupa podataka}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Zna\IeC {\v c}aj podataka u dubokom u\IeC {\v c}enju}{5}{section.2.1}
+\contentsline {subsubsection}{Prikupljanje podataka}{5}{section*.4}
+\contentsline {subsubsection}{Klasifikacija i ozna\IeC {\v c}avanje podataka}{5}{section*.5}
+\contentsline {section}{\numberline {2.2}Generiranje slika}{6}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Generalizacija postupka}{6}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Prikupljanje fontova}{7}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Generiranje simbola}{7}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Transformacije}{7}{subsection.2.2.4}
-\contentsline {subsubsection}{Skaliranje}{8}{section*.9}
-\contentsline {subsubsection}{Rotacija}{8}{section*.11}
-\contentsline {subsubsection}{Afine transfromacije}{9}{section*.13}
-\contentsline {subsection}{\numberline {2.2.5}Kreiranje cjelovitih slika}{10}{subsection.2.2.5}
-\contentsline {section}{\numberline {2.3}TFRecords}{11}{section.2.3}
-\contentsline {chapter}{\numberline {3}Single Shot MultiBox Detector mre\IeC {\v z}a}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}Za\IeC {\v s}to je nastala SSD mre\IeC {\v z}a}{13}{section.3.1}
-\contentsline {section}{\numberline {3.2}Arhitektura}{14}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}VGG-16 arhitektura}{14}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}SSD arhitektura}{15}{subsection.3.2.2}
-\contentsline {chapter}{\numberline {4}Trening}{16}{chapter.4}
-\contentsline {section}{\numberline {4.1}Treniranje SSD neuronske mre\IeC {\v z}e}{16}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Visoki pogled na treniranje}{16}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Odre\IeC {\dj }ivanje pozicije objekata}{16}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Odre\IeC {\dj }ivanje parametara za nastavak treniranja}{17}{subsection.4.1.3}
-\contentsline {subsubsection}{Lokalizacijski gubitak (\emph {loc})}{17}{section*.20}
-\contentsline {subsubsection}{Klasifikacijski gubitak (\emph {conf})}{17}{section*.21}
-\contentsline {chapter}{\numberline {5}Rezultati}{19}{chapter.5}
-\contentsline {section}{\numberline {5.1}Opis rezultata}{19}{section.5.1}
-\contentsline {section}{\numberline {5.2}Prikaz rezultata}{19}{section.5.2}
-\contentsline {section}{\numberline {5.3}\emph {Tensorboard} rezultati}{21}{section.5.3}
-\contentsline {chapter}{Literatura}{23}{chapter*.26}
+\contentsline {subsubsection}{Skaliranje}{9}{section*.9}
+\contentsline {subsubsection}{Rotacija}{10}{section*.11}
+\contentsline {subsubsection}{Afine transfromacije}{10}{section*.13}
+\contentsline {subsection}{\numberline {2.2.5}Kreiranje cjelovitih slika}{12}{subsection.2.2.5}
+\contentsline {section}{\numberline {2.3}TFRecords}{13}{section.2.3}
+\contentsline {chapter}{\numberline {3}Single Shot MultiBox Detector mre\IeC {\v z}a}{15}{chapter.3}
+\contentsline {section}{\numberline {3.1}Za\IeC {\v s}to je nastala SSD mre\IeC {\v z}a}{15}{section.3.1}
+\contentsline {section}{\numberline {3.2}Arhitektura}{16}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}VGG-16 arhitektura}{16}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}SSD arhitektura}{17}{subsection.3.2.2}
+\contentsline {chapter}{\numberline {4}Trening}{18}{chapter.4}
+\contentsline {section}{\numberline {4.1}Treniranje SSD neuronske mre\IeC {\v z}e}{18}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Visoki pogled na treniranje}{18}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Odre\IeC {\dj }ivanje pozicije objekata}{18}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Odre\IeC {\dj }ivanje parametara za nastavak treniranja}{19}{subsection.4.1.3}
+\contentsline {subsubsection}{Lokalizacijski gubitak (\emph {loc})}{19}{section*.20}
+\contentsline {subsubsection}{Klasifikacijski gubitak (\emph {conf})}{19}{section*.21}
+\contentsline {chapter}{\numberline {5}Rezultati}{21}{chapter.5}
+\contentsline {section}{\numberline {5.1}Opis rezultata}{21}{section.5.1}
+\contentsline {section}{\numberline {5.2}Prikaz rezultata}{21}{section.5.2}
+\contentsline {section}{\numberline {5.3}\emph {Tensorboard} rezultati}{23}{section.5.3}
+\contentsline {chapter}{Literatura}{25}{chapter*.26}

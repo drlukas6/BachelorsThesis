@@ -2,7 +2,7 @@
 Prvi i najdulji praktični korak treninga predstavlja priprema podataka. 
 Sve ovisi o zadatku koji mreža mora riješiti, ali, generalno je pravilo da je više podataka bolje.
 Konačna kvaliteta rješenja osim o arhitekturi mreže koju dizajniramo, ovisi o kvaliteti podataka kojom ju usmjeravamo.
-Priprema podataka vrši se u 3 glavna koraka (\cite{generalDatasets}):
+Priprema podataka vrši se u 3 glavna koraka \cite{generalDatasets}:
 \begin{enumerate}
 \item Prikupljanje
 \item Klasifikacija
@@ -10,18 +10,18 @@ Priprema podataka vrši se u 3 glavna koraka (\cite{generalDatasets}):
 \end{enumerate} 
 \subsubsection{Prikupljanje podataka}
 Prikupljanje podataka mora biti sustavan i smislen proces jer može otežati i olakšati daljnje korake. 
-Najpreporučeniji način za prikupljanje je dugoročno i postepeno spremanje podataka jer rezultira velikim brojem objektivnih i kvalitetih podataka.
-Ja sam se ipak odlučio na metodu računalnog generiranja vlastitog seta podataka. 
-Razlog tome je raznolikost elemenata koje mreža mora moći detektirati i fleksibilnost koju dobivam jednomo kada ustanovim sve potrebe.
+Najpreporučeniji način za prikupljanje je dugoročno i postepeno spremanje podataka jer rezultira velikim brojem objektivnih i kvalitetnih podataka.
+Odlučeno je koristiti metodu računalnog generiranja vlastitog skupa podataka. 
+Razlog tome je raznolikost elemenata koje mreža mora moći detektirati i fleksibilnost koju dobivamo jednom kada ustanovimo sve potrebe.
 \subsubsection{Klasifikacija i označavanje podataka}
 Generirani podaci na određeni način moraju biti prikazani mreži. 
-Iako u mrežu slika ulazi kao vektor dimenzija \texttt{(visina x širina x kanali)} mreži su potrebni i podaci za uspoređivanje rezultata i računanje uspješnosti.
-U ovom radu koristio sa \texttt{.csv} datoteku za dohvaćanje i kao opisnik slika. 
+Iako u mrežu slika ulazi kao vektor dimenzija \texttt{(visina x širina x kanali)}, mreži su potrebni i podaci za uspoređivanje rezultata i računanje uspješnosti.
+U ovom radu koristi se \texttt{.csv} datoteka za dohvaćanje i kao opisnik slika. 
 Postupak automatskog generiranja slika uvelike je olakšao klasifikaciju i označavanje jer je cijeli postupak ostvaren kao "cjevovod".
 Pri izlasku, slika bi bila prikazana kao na slici ~\ref{fig:pipelineExitExample}.
 Datoteka bi upisano imala ime slike, simbol na slici, širinu, visinu i točan položaj elementa na slici. 
-Prednost ovog pristupa je i u tom što slika nije zadana absolutnom putanjom, što znači, da sam slike mogao kreirati na vlastitom računalu, prenjeti ih na udaljeni server za treniranje i bez komplikacija koristiti iste. \\
-Veličina opisnika je također bila zanemariva. 
+Prednost ovog pristupa je i u tome što slika nije zadana apsolutnom putanjom, što znači da su slike mogle biti kreirane na vlastitom računalu, prenešene na udaljeni server za treniranje i bez komplikacija biti korištene. \\
+Veličina opisnika je također bila zanemariva. \\ 
 Nakon raspodjele \texttt{80:20} za trening i validaciju na 15 000 slika, veličine su bile \texttt{440kB} i \texttt{110kB} dok je direktorij sa slikama bio veličine \texttt{6,7GB}.
 
 \begin{figure}[h!]
@@ -33,11 +33,12 @@ Nakon raspodjele \texttt{80:20} za trening i validaciju na 15 000 slika, veliči
 
 \section{Generiranje slika}
 \subsection{Generalizacija postupka}
-Za relativan uspjeh treniranja mreže za detekciju i klasifikaciju 14 tekstovnih elemenata (0-9, +, -, *, :) potrebno je minimalno 10 000 slika. Ne samo zbog broja elemenata već i zbog složenosti i raznolikosti između njih. 
-Postupak koji sam razvio primjenjuje sve taktike (\cite{chollet2017deep}) potrebne za stvaranje raznovrsnog i kvalitetnog seta podataka.
-Zbog transformacija, opisanih u daljnjim djelovima poglavlja, gotovo je nemoguće da iako se isti font stavlja na pozadinu, nastane isti oblik.
+Za relativan uspjeh treniranja mreže za detekciju i klasifikaciju 14 tekstovnih elemenata (0-9, +, -, *, :) rezultati su pokazali da je potrebno minimalno 10 000 slika. 
+Ne samo zbog broja elemenata već i zbog složenosti i raznolikosti između njih. 
+Razvijeni postupak primjenjuje sve taktike \cite{chollet2017deep} potrebne za stvaranje raznovrsnog i kvalitetnog seta podataka.
+Zbog transformacija opisanih u daljnjim dijelovima poglavlja, gotovo je nemoguće, da iako se isti font stavlja na pozadinu, nastane isti oblik.
 Na slici ~\ref{fig:imageGenerationPipeline} prikazana je topologija cjevovoda koja kreira slike.
-Cijeli cjevovod, implementiran je unutar programskog paketa \emph{ImageGenerator}, kojeg sam napisao u svrhu apstraktiranja cijelog postupka.
+Cijeli cjevovod implementiran je unutar programskog paketa \emph{ImageGenerator}, razvijen u svrhu apstraktiranja cijelog postupka.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=1.0\linewidth]{image_generation_pipeline}
@@ -47,8 +48,8 @@ Cijeli cjevovod, implementiran je unutar programskog paketa \emph{ImageGenerator
 
 \subsection{Prikupljanje fontova}
 Ispisivanje velikog broja simbola sa razlikom između varijacija istog monoton je i neisplativ posao, posebice zbog dostupnosti svih potrebnih resursa na internetu.
-U prilog je također išlo to što su dostupni fontovi, koji primjenjuju rukopisni stil, najčešće zbilja napisani rukom i vektorizirani, pa, generiranje i transformiranje neće negativno utjecati na kvalitetu.
-Osim rukopisnih fontova, skinuo sam mali broj fontova koji su stilski između čistog rukopisnog i tipkanog.
+U prilog je također išlo to što su dostupni fontovi, koji primjenjuju rukopisni stil, najčešće zbilja napisani rukom i vektorizirani, pa generiranje i transformiranje neće negativno utjecati na kvalitetu.
+Osim rukopisnih fontova, prikupljen je i mali broj fontova koji su stilski između čistog rukopisnog i tipkanog. \\
 Fontovi su bili prikupljeni sa sljedećih izvora, a na slici ~\ref{fig:fontDiffs} vidljivi su primjeri istih:
 \begin{itemize}
 \item \url{https://www.dafont.com}
@@ -64,7 +65,7 @@ Fontovi su bili prikupljeni sa sljedećih izvora, a na slici ~\ref{fig:fontDiffs
 
 \subsection{Generiranje simbola}
 Nakon prikupljanja i sortiranja fontova, generiranje samih simbola bio je jednostavan posao.
-Važno je bilo očuvati transparentnost pozadine iza simbola jer u trenutku kada se postavi na pozadinu po izboru, ona mora biti vidljiva.
+Važno je očuvati transparentnost pozadine iza simbola jer u trenutku kada se postavi na pozadinu po izboru, ona mora biti vidljiva.
 \begin{algorithm}
 \caption{Generiraj sve simbole}
 \begin{algorithmic}[1]
@@ -96,14 +97,14 @@ Prije postavljanja simbola na nasumično odabranu sliku, svaki simbol prošao je
 \item Rotacija
 \item Afina transformacija
 \end{enumerate}
-Cilj transformacija je maksimalno unjeti raznolikost unutar dataseta u slučaju premalog ili presličnog broja slika.
-Klasa \emph{ImageGenerator} za to se brine na sličan način kao programski paket \emph{Keras.preprocessing.image.ImageDataGenerator} (\cite{Keras.io}).
-Transformaciju nad slikama vršio sam pomoću programskog paketa \emph{OpenCV} (\cite{OpenCV}) jer apstraktira potrebne matematičke operacije na razumljiv, lako koristiv i prilagodljiv način.
-Tijekom faze transformiranja i postavljanja slike na pozadinu, one su u obliku matrice, definirane pomoću programskog paketa \emph{Numpy}.
+Cilj transformacija je maksimalno unijeti raznolikost unutar skupa podataka u slučaju premalog ili presličnog broja slika.
+Klasa \emph{ImageGenerator} za to se brine na sličan način kao programski paket \emph{Keras.preprocessing.image.ImageDataGenerator} \cite{Keras.io}.
+Transformacije nad slikama izvedene su pomoću programskog paketa \emph{OpenCV} \cite{OpenCV} jer apstraktira potrebne matematičke operacije na razumljiv, lako koristiv i prilagodljiv način.
+Tijekom faze transformiranja i postavljanja slike na pozadinu, one su u obliku matrice definirane pomoću programskog paketa \emph{Numpy}.
 \subsubsection{Skaliranje}
-Skaliranje pomoću \emph{OpenCV} paketa može se vršiti ili ručno, specifirajući točnu veličinu, ili dajući faktor skaliranja.
-\emph{OpenCV} također automatski primjenjuje \emph{interpolaciju} kako bi se kvalitete maksimalno sačuvala.
-Skaliranje se vrši na način da se matrica slike pomnoži sa matricom skaliranja, zadanom na sljedeći način:
+Skaliranje pomoću \emph{OpenCV} paketa može se izvoditi ili ručno, specifirajući točnu veličinu, ili dajući faktor skaliranja.
+\emph{OpenCV} također automatski primjenjuje \emph{interpolaciju} kako bi se kvaliteta maksimalno sačuvala.
+Skaliranje se izvodi na način da se matrica slike pomnoži sa matricom skaliranja, zadanom na sljedeći način:
 $$
 M
 =
@@ -119,11 +120,11 @@ Rezultat skaliranja vidljiv je na slici ~\ref{fig:scaling}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.4\linewidth]{Scaling}
-	 \caption{Rezultat primjene skaliranja sa $s_{x} = s_{y} = 1.25$}
+	 \caption{Rezultat primjene skaliranja uz faktore $s_{x} = s_{y} = 1.25$}
  	 \label{fig:scaling}
 \end{figure}
 \subsubsection{Rotacija}
-Rotacija slike, za kut $\theta$ ostvaruje se množenjem sa matricom rotacije:
+Rotacija slike za kut $\theta$ ostvaruje se množenjem s matricom rotacije:
 $$
 M
 =
@@ -132,25 +133,25 @@ M
 	\sin(\theta) && \cos(\theta)
 \end{bmatrix}
 $$
-Iako sam ja rotiranje vršio iz središnje točke, \emph{OpenCV} nudi podršku za eksplicitno zadavanje točke oko koje će se rotacija vršiti.
-Rezultat rotiranja vidljiv je na slici ~\ref{fig:Rotating}
+Iako je rotiranje izvedeno iz središnje točke, \emph{OpenCV} nudi podršku za eksplicitno zadavanje točke oko koje će se rotacija izvoditi.
+Rezultat rotiranja vidljiv je na slici ~\ref{fig:Rotating}.
 \lstset{numbers=left}
 \lstinputlisting[language=python]{CodeSamples/Rotation.py}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.4\linewidth]{Rotation}
-	 \caption{Rezultat primjene rotacije sa $\theta = 25$}
+	 \caption{Rezultat primjene rotacije s $\theta = 25$}
  	 \label{fig:Rotating}
 \end{figure}
 \subsubsection{Afine transfromacije}
-Afine transformacije koristim za prividno transformiranje simbola "u prostoru", bez velikog rizika od prevelike distorzije slike jer sve paralelne linije, nakon transformacije ostaju paralelne.
-\emph{OpenCV} Afinu transformaciju vrši tako da tri odabrane točke na slici pomakne za određeni koeficijent.
-Kao i ostale transformacije, matematički nastaje množenjem matrice slike s matricom afine transformacije oblika.
+Afine transformacije koristimo za prividno transformiranje simbola "u prostoru", bez velikog rizika od prevelike distorzije slike jer, sve paralelne linije nakon transformacije ostaju paralelne.
+\emph{OpenCV} afinu transformaciju vrši tako da tri odabrane točke na slici pomakne za određeni koeficijent.
+Kao i ostale transformacije, matematički nastaje množenjem matrice slike s matricom afine transformacije oblika:
 $$
 \begin{bmatrix}
 	1 && \tan(\beta) \\
 	\tan(\alpha) && 1
-\end{bmatrix}
+\end{bmatrix} ,
 $$
 gdje su $\alpha$ i $\beta$ razlike u kutevima prema pripadajućim koordinatnim osima.
 Rezultat primjene afine transformacije na simbolu vidljiv je na slici ~\ref{fig:Affine}
@@ -165,8 +166,8 @@ Rezultat primjene afine transformacije na simbolu vidljiv je na slici ~\ref{fig:
 
 \subsection{Kreiranje cjelovitih slika}
 Kreiranje cjelovitih slika svodilo se na postavljanje generiranih i transformiranih simbola na pozadinu po izboru.
-Pozadina također igra veliku ulogu u prepoznavanju jer mreža pregledava cijelu sliku. 
-Za svoje potrebe odlučio sam za pozadinu koristiti slike matematičkih bilježnica uz pretpostavku da bi se iste koristile naviše kada bi se ova mreža koristila u stvarnom svijetu.
+Pozadina također igra veliku ulogu u prepoznavanju jer mreža pregledava cijelu sliku.
+Za potrebe ovog rada izabrana je pozadina matematičkih bilježnica uz pretpostavku da bi se iste najčešće koristile kada bi se naučena mreža koristila u stvarnom svijetu.
 Izlazi iz mreže vidljivi su na slikama ~\ref{fig:ImageGeneratorOutputs} i ~\ref{fig:ImageGeneratorTermOutputs}.
 Slike su spremljene u direktorij \texttt{Images}, a \texttt{.csv} opisnik u direktorij \texttt{Data} odakle će se dalje referencirati za kreiranje \texttt{.record} datoteke za daljnje korištenje \emph{Tensorflow-u}.
 \begin{figure}
@@ -184,11 +185,11 @@ Slike su spremljene u direktorij \texttt{Images}, a \texttt{.csv} opisnik u dire
 \section{TFRecords}
 Zašto je bolje za mrežu da podatke čita iz \texttt{.record} datoteke nego odvojeno slike i pripadajuće opise?
 Zamislimo sljedeći scenarij.
-Treniranje se vrši na računalu sa \texttt{HDD} diskom, slike i oznake su u različitim direktorijima.
+Učenje se izvodi na računalu sa \texttt{HDD} diskom, slike i oznake su u različitim direktorijima.
 Svako čitanje sljedeće slike i oznake rezultira potencijalnim pomicanjem glave diska.
 Cilj je da sve potrebne datoteke budu što bolje poravnate u memoriji.
 Tu se pokazuje najveći značaj \emph{TFRecords} datoteke. 
-Jedna binarna datoteka koja sadrži sve informacije za mrežu, jedinstveno poravnata u memoriji (\cite{TFRecords}). \\
+Jedna binarna datoteka koja sadrži sve informacije za mrežu, jedinstveno poravnata u memoriji \cite{TFRecords}. \\
 U pozadini, \emph{TFRecords} je format koji koristi \emph{Protocol buffer} tehnologiju.
 \emph{Protocol buffer} ili kraće \emph{Protobuf} je knjižnica za efikasnu serijalizaciju strukturiranih podataka (\cite{tensorflow.org}).
 Konkretno, koristimo \emph{Protobuf} poruke oblika \texttt{"string" : value} za predstavljanje objekata mreži.
@@ -208,10 +209,10 @@ U mom slučaju, slike su zapisane na sljedeći način:
 \item classes = \texttt{int64\_list}
 \
 \end{itemize}
-Svi navedeni podaci zapisuju se pod \texttt{feature} ključ. \\
+Svi navedeni podaci zapisuju se pod ključ \texttt{feature}. \\
 Kako u našem slučaju vršimo detekciju i klasifikaciju objekata, bitno je da na neki način i klasama damo jedinstveni identifikator.
-Naime, u \emph{TFRecords} datoteku pod ključ \emph{classes} koji sadrži podatke o tom koji su svi objekti na slici ne pišemo doslovno ime objekta (npr. Automobil, kuća, ...).
+Naime, u \emph{TFRecords} datoteku pod ključ \emph{classes} koji sadrži podatke o tom koji su svi objekti na slici ne pišemo doslovno ime objekta (npr. automobil, kuća, ...).
 Pišemo brojčanu vrijednost istog objekta koja ga predstavlja. 
 Isti način je precizniji i sažetiji. \\
-Konkretno ime dnevnika koji sadrži mapiranja iz objekta u njegovu brojčanu vrijednost naziva se \emph{Label map} i osim za stvaranje \emph{TFRecords} datoteke, koristi ga i sama mreža i mi kad iz mreže čitamo što je ista prepoznala.
-Za kreiranje datoteke pratio sam korake opisane na službenoj \emph{Tensorflow} stranici.
+Primjerice, ime dnevnika koji sadrži mapiranja iz objekta u njegovu brojčanu vrijednost naziva se \emph{Label map} i osim za stvaranje \emph{TFRecords} datoteke, koristi ga i sama mreža i mi kad iz mreže čitamo što je ista prepoznala.
+Za kreiranje datoteke praćeni su koraci opisani na službenoj \emph{Tensorflow} stranici.
