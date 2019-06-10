@@ -15,36 +15,38 @@ Warning--entry type for "TFRecords" isn't style-file defined
 --line 45 of file literatura.bib
 Warning--entry type for "tensorflow.org" isn't style-file defined
 --line 50 of file literatura.bib
-You've used 11 entries,
+Warning--entry type for "SSD" isn't style-file defined
+--line 55 of file literatura.bib
+You've used 12 entries,
             1876 wiz_defined-function locations,
-            522 strings with 4572 characters,
-and the built_in function-call counts, 1770 in all, are:
-= -- 146
-> -- 66
+            526 strings with 4616 characters,
+and the built_in function-call counts, 1891 in all, are:
+= -- 156
+> -- 70
 < -- 0
-+ -- 28
-- -- 17
-* -- 92
-:= -- 234
-add.period$ -- 7
-call.type$ -- 11
-change.case$ -- 10
++ -- 30
+- -- 18
+* -- 96
+:= -- 251
+add.period$ -- 8
+call.type$ -- 12
+change.case$ -- 11
 chr.to.int$ -- 0
-cite$ -- 11
-duplicate$ -- 89
-empty$ -- 231
-format.name$ -- 17
-if$ -- 446
+cite$ -- 12
+duplicate$ -- 93
+empty$ -- 249
+format.name$ -- 18
+if$ -- 477
 int.to.chr$ -- 0
-int.to.str$ -- 11
+int.to.str$ -- 12
 missing$ -- 6
-newline$ -- 37
-num.names$ -- 6
-pop$ -- 64
+newline$ -- 40
+num.names$ -- 7
+pop$ -- 71
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 72
+skip$ -- 76
 stack$ -- 0
 substring$ -- 48
 swap$ -- 17
@@ -53,7 +55,7 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 12
-width$ -- 13
-write$ -- 78
-(There were 6 warnings)
+while$ -- 13
+width$ -- 14
+write$ -- 85
+(There were 7 warnings)

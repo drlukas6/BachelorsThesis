@@ -6,7 +6,7 @@ Razlog tome je pretpostavljam određeni broj \emph{false positive}-a (Slika ~\re
 Naime, \emph{false positive} slike nastale su primjenom transformacija nasumično generiranim parametrima koji su se našli na rubu prihvatljivih vrijednosti.
 Nažalost, zbog velikog broja slika (nakon svih generiranja, pokušaja i treniranja $\geq 20000$) nisam ručno mogao izbaciti sve.
 Ipak, smatram da je određeni mali broj takvih slika neophodan za uspješno treniranje slike. \\
-Nakon ukupno $500 000$ koraka, tj. $brojKoraka \times \frac{batchSlika}{brojSlika} = 500000 \times \frac{24}{15000} = 80$ epoha,  ukupni gubitak iznosio je $3.879$ gdje je po izgledu dosegao asimptotu.
+Nakon ukupno $500 000$ koraka, tj. $80$ epoha po formuli ~\ref{eq:stepEpoch},  ukupni gubitak iznosio je $3.879$ gdje je po izgledu dosegao asimptotu.
 \section{Prikaz rezultata}
 Na slici ~\ref{fig:IndividualDigit} prikazana je prva uspješno detektirana i klasificirana slika, dotad ne viđena mreži.
 Postotak pouzdanosti ($0.54$) je jasno na donjoj granici i naslućuje prve uspjehe prilagođenoj neuronskoj mreži koja nikad prije nije bila osmišljena za detekciju teksta.

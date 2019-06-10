@@ -92,6 +92,7 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Arhitektura SSD mre\IeC {\v z}e\relax }}{17}{figure.caption.18}}
 \newlabel{fig:SSDArchitecture}{{3.3}{17}{Arhitektura SSD mreže\relax }{figure.caption.18}{}}
 \citation{liu2016ssd}
+\citation{SSD}
 \citation{liu2016ssd}
 \@writefile{toc}{\contentsline {chapter}{\numberline {4}U\IeC {\v c}enje}{18}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
@@ -101,6 +102,7 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Odre\IeC {\dj }ivanje pozicije objekata}{18}{subsection.4.1.2}}
 \citation{liu2016ssd}
 \citation{liu2016ssd}
+\citation{chollet2017deep}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Na\IeC {\v c}in na koji ra\IeC {\v c}unamo \emph  {jaccardov index preklapanja, tj. IoU}.\relax }}{19}{figure.caption.19}}
 \newlabel{fig:JaccardIndex}{{4.1}{19}{Način na koji računamo \emph {jaccardov index preklapanja, tj. IoU}.\relax }{figure.caption.19}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}Odre\IeC {\dj }ivanje parametara za nastavak u\IeC {\v c}enja}{19}{subsection.4.1.3}}
@@ -109,34 +111,40 @@
 \newlabel{eq:lokLoss}{{4.2}{19}{Lokalizacijski gubitak (\emph {loc})}{equation.4.1.2}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Klasifikacijski gubitak (\emph  {conf})}{19}{section*.21}}
 \newlabel{eq:klasLoss}{{4.3}{19}{Klasifikacijski gubitak (\emph {conf})}{equation.4.1.3}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Rezultati}{20}{chapter.5}}
+\citation{tensorflow.org}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.4}Definiranje trajanja u\IeC {\v c}enja}{20}{subsection.4.1.4}}
+\@writefile{toc}{\contentsline {subsubsection}{Korak}{20}{section*.22}}
+\newlabel{tab:uredaji}{{4.1.4}{20}{Korak}{section*.22}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Epoha}{20}{section*.23}}
+\newlabel{eq:stepEpoch}{{4.4}{20}{Epoha}{equation.4.1.4}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Rezultati}{21}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Opis rezultata}{20}{section.5.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Prikaz rezultata}{20}{section.5.2}}
-\newlabel{fig:FalsePositive}{{5.1a}{21}{Subfigure 5 5.1a}{subfigure.5.1.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Opis rezultata}{21}{section.5.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Prikaz rezultata}{21}{section.5.2}}
+\newlabel{fig:FalsePositive}{{5.1a}{22}{Subfigure 5 5.1a}{subfigure.5.1.1}{}}
 \newlabel{sub@fig:FalsePositive}{{(a)}{a}{Subfigure 5 5.1a\relax }{subfigure.5.1.1}{}}
-\newlabel{fig:IndividualDigit}{{5.1b}{21}{Subfigure 5 5.1b}{subfigure.5.1.2}{}}
+\newlabel{fig:IndividualDigit}{{5.1b}{22}{Subfigure 5 5.1b}{subfigure.5.1.2}{}}
 \newlabel{sub@fig:IndividualDigit}{{(b)}{b}{Subfigure 5 5.1b\relax }{subfigure.5.1.2}{}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {\emph {False positive} slika koja sadr\IeC {\v z}i neodre\IeC {\dj }eni element naizgled nevidljiv zbog nepravilnih transformacija primjenjenih na istom}}}{21}{subfigure.1.1}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Prva detekcija ra\IeC {\v c}unalno generirane znamenke 3 na slici uz mali postotak pouzdanosti}}}{21}{subfigure.1.2}}
-\newlabel{fig:ExpressionA}{{5.1a}{21}{Subfigure 5 5.1a}{subfigure.5.1.1}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {\emph {False positive} slika koja sadr\IeC {\v z}i neodre\IeC {\dj }eni element naizgled nevidljiv zbog nepravilnih transformacija primjenjenih na istom}}}{22}{subfigure.1.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Prva detekcija ra\IeC {\v c}unalno generirane znamenke 3 na slici uz mali postotak pouzdanosti}}}{22}{subfigure.1.2}}
+\newlabel{fig:ExpressionA}{{5.1a}{22}{Subfigure 5 5.1a}{subfigure.5.1.1}{}}
 \newlabel{sub@fig:ExpressionA}{{(a)}{a}{Subfigure 5 5.1a\relax }{subfigure.5.1.1}{}}
-\newlabel{fig:ExpressionB}{{5.1b}{21}{Subfigure 5 5.1b}{subfigure.5.1.2}{}}
+\newlabel{fig:ExpressionB}{{5.1b}{22}{Subfigure 5 5.1b}{subfigure.5.1.2}{}}
 \newlabel{sub@fig:ExpressionB}{{(b)}{b}{Subfigure 5 5.1b\relax }{subfigure.5.1.2}{}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Pouzdanost i preciznost nakon $350000$ koraka}}}{21}{subfigure.1.1}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Pouzdanost i preciznost nakon $500000$ koraka}}}{21}{subfigure.1.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Pouzdanost i preciznost nakon $350000$ koraka}}}{22}{subfigure.1.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Pouzdanost i preciznost nakon $500000$ koraka}}}{22}{subfigure.1.2}}
 \bibstyle{ieeetr}
 \bibdata{literatura}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Jednostavan ru\IeC {\v c}no napisan matemati\IeC {\v c}ki izraz koji prikazuje uspjeh rada mre\IeC {\v z}e na istom\relax }}{22}{figure.caption.24}}
-\newlabel{fig:Handwritten}{{5.1}{22}{Jednostavan ručno napisan matematički izraz koji prikazuje uspjeh rada mreže na istom\relax }{figure.caption.24}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}\emph  {Tensorboard} rezultati}{22}{section.5.3}}
-\newlabel{fig:losses}{{5.2a}{23}{Subfigure 5 5.2a}{subfigure.5.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Jednostavan ru\IeC {\v c}no napisan matemati\IeC {\v c}ki izraz koji prikazuje uspjeh rada mre\IeC {\v z}e na istom\relax }}{23}{figure.caption.26}}
+\newlabel{fig:Handwritten}{{5.1}{23}{Jednostavan ručno napisan matematički izraz koji prikazuje uspjeh rada mreže na istom\relax }{figure.caption.26}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}\emph  {Tensorboard} rezultati}{23}{section.5.3}}
+\newlabel{fig:losses}{{5.2a}{24}{Subfigure 5 5.2a}{subfigure.5.2.1}{}}
 \newlabel{sub@fig:losses}{{(a)}{a}{Subfigure 5 5.2a\relax }{subfigure.5.2.1}{}}
-\newlabel{fig:totalLoss}{{5.2b}{23}{Subfigure 5 5.2b}{subfigure.5.2.2}{}}
+\newlabel{fig:totalLoss}{{5.2b}{24}{Subfigure 5 5.2b}{subfigure.5.2.2}{}}
 \newlabel{sub@fig:totalLoss}{{(b)}{b}{Subfigure 5 5.2b\relax }{subfigure.5.2.2}{}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Napredak dvije komponente gubitka kroz vrijeme}}}{23}{subfigure.2.1}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Ukupan gubitak nastao od lokalizacijskog i klasifikacijskog gubitka kroz vrijeme}}}{23}{subfigure.2.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Napredak dvije komponente gubitka kroz vrijeme}}}{24}{subfigure.2.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Ukupan gubitak nastao od lokalizacijskog i klasifikacijskog gubitka kroz vrijeme}}}{24}{subfigure.2.2}}
 \bibcite{ConvNet}{{1}{}{{}}{{}}}
 \bibcite{o2015introduction}{{2}{}{{}}{{}}}
 \bibcite{generalDatasets}{{3}{}{{}}{{}}}
@@ -148,5 +156,6 @@
 \bibcite{ren2015faster}{{9}{}{{}}{{}}}
 \bibcite{simonyan2014very}{{10}{}{{}}{{}}}
 \bibcite{liu2016ssd}{{11}{}{{}}{{}}}
+\bibcite{SSD}{{12}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\@writefile{toc}{\contentsline {chapter}{Literatura}{24}{chapter*.26}}
+\@writefile{toc}{\contentsline {chapter}{Literatura}{25}{chapter*.28}}

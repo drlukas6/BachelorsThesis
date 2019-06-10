@@ -9,7 +9,7 @@ O pretpostavljenim kvadratima, skalama za detekciju i strategijama pisati će se
 Tijekom učenja, cilj je odrediti koji pretpostavljeni pravokutnici najbolje odgovaraju "ground truth" pravokutnicima objekta, to jest onima specifiranim u skupu podržavamotaka.
 Nakon što se odrede najprecizniji pravokutnici, mreža se sukladno tome dalje prilagođava.
 Za svaki "ground truth" pravokutnik imamo na izbor više pretpostavljenih pravokutnika, različitih lokacija, skala i omjera.
-Želimo naći onaj koji ima najveći \emph{jaccardov index preklapanja} (dalje \emph{IoU}) (slika ~\ref{fig:JaccardIndex}).
+Želimo naći onaj koji ima najveći \emph{jaccardov index preklapanja} (dalje \emph{IoU}) (slika ~\ref{fig:JaccardIndex}) \cite{SSD}.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.6\linewidth]{iou_equation}
@@ -40,4 +40,35 @@ Klasifikacijski gubitak računa se kao \emph{softmax} svih klasa koje podržavam
 \begin{equation}
 	\label{eq:klasLoss}
 	L_{conf}(x,c)=-\sum_{i \in Pos}^N x_{ij}^p \log(\hat c_i^0) - \sum_{i \in Neg} \log(\hat c_i^0 ) \ {gdje} \ \hat c_i^p=\frac{\exp(c_i^p)}{\sum_p \exp(c_i^p)}
+\end{equation}
+\subsection{Definiranje trajanja učenja}
+Tijek i trajanje učenja može se opisati koristeći više parametara. 
+Korišteni \emph{Tensorflow object detection API} zahtjeva određivanje broja koraka, dok se u litraturi, npr. \cite{chollet2017deep}  najčešće koristi epoha.
+\subsubsection{Korak}
+Mreži se u konfiguracijskoj datoteci, priloženoj na kraju rada predaje parametar \emph{batch size}.
+\emph{Batch size} definira koliko će se u jednom trenutku uzeti slika za učenje.
+Parametar, iako može biti jedan, najčešće je 24 \cite{tensorflow.org}.
+Nakon što mreža obradi sve slike uzete u jednom trenutku ona popravlja svoje parametre, odnosno težine.
+Upravo to razdoblje od uzimanja određenog broja slika, i obrade svih definira \emph{korak}.
+Koliko korak traje?
+Učenje mreže za ovaj rad izvodilo se na dva uređaja zbog potrebe mjerenja i vidljivo je na tablici ~\ref{tab:uredaji} koja prikazuje povezanost procesnih jedinica uređaja na kojima se učenje vršilo i pripadajuća vremena po jednom koraku treniranja.
+\begin{center}
+	\begin{tabular}{||c c||}
+		\hline
+		Specifikacije uređaja & Vrijeme po koraku (s) \\ [0.5ex]
+		\hline\hline
+		Macbook Pro 2016, Intel i5 2.9GHz, 8GB & 13.57 \\
+		\hline
+		ZEMRIS C22, NVidia GTX 1080 Ti, 11GB & 0.86 \\ [1ex]
+		\hline
+	\end{tabular}
+\label{tab:uredaji}
+\end{center}
+\subsubsection{Epoha}
+Epoha označava pregled cijelog skupa podataka. 
+To naravno ne znači da je svaka slika pogledana točno jednom jer su nasumično učitavane u mrežu ali onaj trenutak kada su sve barem jednom prošle kroz mrežu označava kraj jedne epohe.
+Uz pretpostavku da je svaka slika pogledana jednom, približno se može izračunati broj epoha iz broja koraka formulom ~\ref{eq:stepEpoch}.
+\begin{equation}
+	\label{eq:stepEpoch}
+	broj epoha = brojKoraka \times \frac{batchSlika}{brojSlika}
 \end{equation}

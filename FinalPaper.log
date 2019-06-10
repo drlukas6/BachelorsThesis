@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.11)  10 JUN 2019 01:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.11)  10 JUN 2019 02:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -478,7 +478,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.151 ...and\NAT@force@numbers{}\NAT@force@numbers
+l.160 ...and\NAT@force@numbers{}\NAT@force@numbers
                                                   
 ? 
 )
@@ -670,13 +670,13 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 [1
 
 ]
-<Images/cv_traffic.jpg, id=185, 702.625pt x 394.47375pt>
+<Images/cv_traffic.jpg, id=190, 702.625pt x 394.47375pt>
 File: Images/cv_traffic.jpg Graphic file (type jpg)
 <use Images/cv_traffic.jpg>
 Package pdftex.def Info: Images/cv_traffic.jpg  used on input line 35.
 (pdftex.def)             Requested size: 330.05322pt x 185.30637pt.
  [2 <./Images/cv_traffic.jpg>]
-<Images/conv_net.png, id=200, 680.5425pt x 463.7325pt>
+<Images/conv_net.png, id=205, 680.5425pt x 463.7325pt>
 File: Images/conv_net.png Graphic file (type png)
 <use Images/conv_net.png>
 Package pdftex.def Info: Images/conv_net.png  used on input line 61.
@@ -703,12 +703,12 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 [5
 
 ]
-<Images/image_csv.png, id=225, 240.9pt x 120.45pt>
+<Images/image_csv.png, id=230, 240.9pt x 120.45pt>
 File: Images/image_csv.png Graphic file (type png)
 <use Images/image_csv.png>
 Package pdftex.def Info: Images/image_csv.png  used on input line 29.
 (pdftex.def)             Requested size: 412.56497pt x 206.30244pt.
-<Images/image_generation_pipeline.png, id=228, 1505.625pt x 671.50874pt>
+<Images/image_generation_pipeline.png, id=233, 1505.625pt x 671.50874pt>
 File: Images/image_generation_pipeline.png Graphic file (type png)
 <use Images/image_generation_pipeline.png>
 Package pdftex.def Info: Images/image_generation_pipeline.png  used on input li
@@ -719,7 +719,7 @@ ne 44.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [6 <./Images/image_csv.png>]
-<Images/font_diffs.png, id=240, 902.37125pt x 432.61626pt>
+<Images/font_diffs.png, id=245, 902.37125pt x 432.61626pt>
 File: Images/font_diffs.png Graphic file (type png)
 <use Images/font_diffs.png>
 Package pdftex.def Info: Images/font_diffs.png  used on input line 61.
@@ -749,7 +749,7 @@ Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 119.
 
 (./CodeSamples/Scaling.py [9 <./Images/font_diffs.png>])
-<Images/Scaling.png, id=274, 440.64626pt x 269.005pt>
+<Images/Scaling.png, id=279, 440.64626pt x 269.005pt>
 File: Images/Scaling.png Graphic file (type png)
 <use Images/Scaling.png>
 Package pdftex.def Info: Images/Scaling.png  used on input line 122.
@@ -763,7 +763,7 @@ Overfull \hbox (3.3825pt too wide) in paragraph at lines 5--6
  []
 
 )
-<Images/Rotation.png, id=276, 440.64626pt x 269.005pt>
+<Images/Rotation.png, id=281, 440.64626pt x 269.005pt>
 File: Images/Rotation.png Graphic file (type png)
 <use Images/Rotation.png>
 Package pdftex.def Info: Images/Rotation.png  used on input line 142.
@@ -781,7 +781,7 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 9.
 )
-<Images/Affine.png, id=299, 440.64626pt x 269.005pt>
+<Images/Affine.png, id=304, 440.64626pt x 269.005pt>
 File: Images/Affine.png Graphic file (type png)
 <use Images/Affine.png>
 Package pdftex.def Info: Images/Affine.png  used on input line 162.
@@ -790,13 +790,13 @@ Package pdftex.def Info: Images/Affine.png  used on input line 162.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Images/image_generator_output.png, id=302, 542.025pt x 722.7pt>
+<Images/image_generator_output.png, id=307, 542.025pt x 722.7pt>
 File: Images/image_generator_output.png Graphic file (type png)
 <use Images/image_generator_output.png>
 Package pdftex.def Info: Images/image_generator_output.png  used on input line 
 177.
 (pdftex.def)             Requested size: 165.02347pt x 220.0317pt.
-<Images/image_generator_term_output.png, id=303, 917.4275pt x 91.34125pt>
+<Images/image_generator_term_output.png, id=308, 917.4275pt x 91.34125pt>
 File: Images/image_generator_term_output.png Graphic file (type png)
 <use Images/image_generator_term_output.png>
 Package pdftex.def Info: Images/image_generator_term_output.png  used on input 
@@ -812,7 +812,7 @@ r_output.png (PNG copy)> <./Images/image_generator_term_output.png>]) [13]
 [14]
 Poglavlje 3.
 (./Chapters/SSD.tex
-<Images/object_detection_output.jpg, id=356, 1356.06625pt x 903.375pt>
+<Images/object_detection_output.jpg, id=361, 1356.06625pt x 903.375pt>
 File: Images/object_detection_output.jpg Graphic file (type jpg)
 <use Images/object_detection_output.jpg>
 Package pdftex.def Info: Images/object_detection_output.jpg  used on input line
@@ -822,7 +822,7 @@ Package pdftex.def Info: Images/object_detection_output.jpg  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Images/vgg_architecture.png, id=360, 607.26875pt x 336.25626pt>
+<Images/vgg_architecture.png, id=365, 607.26875pt x 336.25626pt>
 File: Images/vgg_architecture.png Graphic file (type png)
 <use Images/vgg_architecture.png>
 Package pdftex.def Info: Images/vgg_architecture.png  used on input line 31.
@@ -833,7 +833,7 @@ Package pdftex.def Info: Images/vgg_architecture.png  used on input line 31.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Images/ssd_architecture.png, id=369, 977.6525pt x 277.035pt>
+<Images/ssd_architecture.png, id=374, 977.6525pt x 277.035pt>
 File: Images/ssd_architecture.png Graphic file (type png)
 <use Images/ssd_architecture.png>
 Package pdftex.def Info: Images/ssd_architecture.png  used on input line 45.
@@ -861,7 +861,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\dj' on input line 8.
 
-<Images/iou_equation.png, id=385, 602.25pt x 469.755pt>
+<Images/iou_equation.png, id=391, 602.25pt x 469.755pt>
 File: Images/iou_equation.png Graphic file (type png)
 <use Images/iou_equation.png>
 Package pdftex.def Info: Images/iou_equation.png  used on input line 15.
@@ -880,20 +880,26 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 
 [18
 
-]) [19 <./Images/iou_equation.png>]
+]
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 44.
+
+[19 <./Images/iou_equation.png>]) [20]
 Poglavlje 5.
 (./Chapters/Results.tex
-<Images/false_positive.png, id=407, 542.025pt x 722.7pt>
+<Images/false_positive.png, id=427, 542.025pt x 722.7pt>
 File: Images/false_positive.png Graphic file (type png)
 <use Images/false_positive.png>
 Package pdftex.def Info: Images/false_positive.png  used on input line 17.
 (pdftex.def)             Requested size: 185.65297pt x 247.53429pt.
-<Images/three.png, id=408, 698.61pt x 907.39pt>
+<Images/three.png, id=428, 698.61pt x 907.39pt>
 File: Images/three.png Graphic file (type png)
 <use Images/three.png>
 Package pdftex.def Info: Images/three.png  used on input line 22.
 (pdftex.def)             Requested size: 185.65297pt x 241.13564pt.
-<Images/first_generated_eqn.png, id=411, 721.2546pt x 930.8376pt>
+<Images/first_generated_eqn.png, id=431, 721.2546pt x 930.8376pt>
 File: Images/first_generated_eqn.png Graphic file (type png)
 <use Images/first_generated_eqn.png>
 Package pdftex.def Info: Images/first_generated_eqn.png  used on input line 30.
@@ -901,19 +907,19 @@ Package pdftex.def Info: Images/first_generated_eqn.png  used on input line 30.
 (pdftex.def)             Requested size: 185.65297pt x 239.59749pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 30.
-<Images/last_generated_eqn.png, id=412, 707.5233pt x 921.4425pt>
+<Images/last_generated_eqn.png, id=432, 707.5233pt x 921.4425pt>
 File: Images/last_generated_eqn.png Graphic file (type png)
 <use Images/last_generated_eqn.png>
 Package pdftex.def Info: Images/last_generated_eqn.png  used on input line 35.
 (pdftex.def)             Requested size: 185.65297pt x 241.77682pt.
-<Images/handwritten.png, id=414, 1219.1949pt x 924.3333pt>
+<Images/handwritten.png, id=434, 1219.1949pt x 924.3333pt>
 File: Images/handwritten.png Graphic file (type png)
 <use Images/handwritten.png>
 Package pdftex.def Info: Images/handwritten.png  used on input line 39.
 (pdftex.def)             Requested size: 206.28249pt x 156.38705pt.
- [20
+ [21
 
-] [21pdfTeX warning (ext4): destination with the same identifier (name{subfigur
+] [22pdfTeX warning (ext4): destination with the same identifier (name{subfigur
 e.5.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -929,12 +935,12 @@ l.43 \section
              {\emph{Tensorboard} rezultati} <./Images/false_positive.png (PNG c
 opy)> <./Images/three.png> <./Images/first_generated_eqn.png> <./Images/last_ge
 nerated_eqn.png>]
-<Images/losses.png, id=434, 1087.06125pt x 700.6175pt>
+<Images/losses.png, id=453, 1087.06125pt x 700.6175pt>
 File: Images/losses.png Graphic file (type png)
 <use Images/losses.png>
 Package pdftex.def Info: Images/losses.png  used on input line 51.
 (pdftex.def)             Requested size: 412.56497pt x 265.906pt.
-<Images/total_loss.png, id=435, 1041.8925pt x 384.43625pt>
+<Images/total_loss.png, id=454, 1041.8925pt x 384.43625pt>
 File: Images/total_loss.png Graphic file (type png)
 <use Images/total_loss.png>
 Package pdftex.def Info: Images/total_loss.png  used on input line 55.
@@ -949,10 +955,10 @@ Overfull \hbox (3.91661pt too wide) in paragraph at lines 51--56
 [][][][] 
  []
 
-) (./FinalPaper.bbl [22 <./Images/handwritten.png>] [23 <./Images/losses.png> <
+) (./FinalPaper.bbl [23 <./Images/handwritten.png>] [24 <./Images/losses.png> <
 ./Images/total_loss.png>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
- [24
+ [25
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
@@ -960,14 +966,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 45.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 45.
 Package rerunfilecheck Info: File `FinalPaper.out' has not changed.
-(rerunfilecheck)             Checksum: 08B6B1BBB76F2248799E12FCA6F4A757;1953.
+(rerunfilecheck)             Checksum: 7C259C60A1DCFF90639F6E8413B320B9;2034.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 45.
  ) 
 Here is how much of TeX's memory you used:
- 11997 strings out of 492649
- 175856 string characters out of 6129622
- 297889 words of memory out of 5000000
- 15488 multiletter control sequences out of 15000+600000
+ 12009 strings out of 492649
+ 176001 string characters out of 6129622
+ 297976 words of memory out of 5000000
+ 15494 multiletter control sequences out of 15000+600000
  118977 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,10n,49p,390b,1972s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -993,10 +999,10 @@ lic/lm/lmssbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/l
 msy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><
 /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local
 /texlive/2018/texmf-dist/fonts/type1/public/lm/lmtto10.pfb>
-Output written on FinalPaper.pdf (29 pages, 6361090 bytes).
+Output written on FinalPaper.pdf (30 pages, 6356717 bytes).
 PDF statistics:
- 557 PDF objects out of 1000 (max. 8388607)
- 467 compressed objects within 5 object streams
- 143 named destinations out of 1000 (max. 500000)
- 338 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 578 PDF objects out of 1000 (max. 8388607)
+ 487 compressed objects within 5 object streams
+ 149 named destinations out of 1000 (max. 500000)
+ 346 words of extra memory for PDF output out of 10000 (max. 10000000)
 
