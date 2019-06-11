@@ -1,0 +1,14 @@
+Ovaj rad obuhvatio je cjelokupni cjevovod jednog ciklusa pripreme duboke neuronske mreže za specifičan zadatak.
+Proces stvaranja slika omogućio je gotovo neograničen skup podataka za neuronsku mrežu.
+Isti skup podataka korišten je za za prenamjenjivanje \emph{SSD} neuronske mreže za detekciju na zadatak prepoznavanja rukom napisanih simbola.
+U detalje je opisana arhitektura spomenute mreže i metode koje koristi za računanje kvalitete izlaza.
+
+Inicijalno, mreža je bila naučena za prepoznavanje objekata unutar $6000$ kategorija.
+Dalje je korištena metoda prenamjenjivanja mreže na druge kategorije koristeći postojeće težine.
+Spomenuta pretpostavka uvelike je olakšala i ubrzala cijeli postupak jer mnogi primitivi koji postoje unutar tih $6000$ kategorija, pojavljuju se i u simbolima.
+
+Nakon procesa učenja u $15 000$ koraka tj. $80$ epoha, dosegnuta je zadovoljavajuća točka preciznosti i pouzdanosti na večini simbola.
+Jedini simbol, koji nije uspješno naučen je simbol množenja što je i jedan od budućih izazova.
+Ostvariti zadovoljavajuću preciznost na svim simbolima i vršiti segmentaciju po retcima.
+Također, preporučuje se i korištenje drugih arhitektura (npr. \emph{Faster R-CNN}) te usporedba rezultata.
+ 

@@ -16,7 +16,7 @@ Za svaki "ground truth" pravokutnik imamo na izbor više pretpostavljenih pravok
 	 \caption{Način na koji računamo \emph{jaccardov index preklapanja, tj. IoU}.}
  	 \label{fig:JaccardIndex}
 \end{figure} \\
-U konfiguracijskoj datoteci koja će biti priložena na kraju rada, možemo ručno odrediti od koje preciznosti pretpostavljeni pravokutnik prihvačamo.
+U konfiguracijskoj datoteci možemo ručno odrediti od koje preciznosti pretpostavljeni pravokutnik prihvačamo.
 Pretpostavljena vrijednost je da mora vrijediti $IoU \geq 0.5$.
 To višestruko olakšava treniranje jer mreža zadržava više pretpostavljenih pravokutnika umjesto da mora odabrati samo onaj sa najvećim preklapanjem.
 \subsection{Određivanje parametara za nastavak učenja}
@@ -45,7 +45,7 @@ Klasifikacijski gubitak računa se kao \emph{softmax} svih klasa koje podržavam
 Tijek i trajanje učenja može se opisati koristeći više parametara. 
 Korišteni \emph{Tensorflow object detection API} zahtjeva određivanje broja koraka, dok se u litraturi, npr. \cite{chollet2017deep}  najčešće koristi epoha.
 \subsubsection{Korak}
-Mreži se u konfiguracijskoj datoteci, priloženoj na kraju rada predaje parametar \emph{batch size}.
+Mreži se u konfiguracijskoj datoteci predaje parametar \emph{batch size}.
 \emph{Batch size} definira koliko će se u jednom trenutku uzeti slika za učenje.
 Parametar, iako može biti jedan, najčešće je 24 \cite{tensorflow.org}.
 Nakon što mreža obradi sve slike uzete u jednom trenutku ona popravlja svoje parametre, odnosno težine.

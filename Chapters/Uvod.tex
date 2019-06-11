@@ -17,7 +17,7 @@ Na primjer, za sliku na kojoj je napisan tekst \texttt{"2 + 2"}, izlaz će biti 
 
 \subsection{Pregled}
 Na najvišoj razini, \emph{računalni vid} su metode koje koje računalima daju mogućnost razumjevanja slike na visokoj razini, najčešće s ciljem automatiziranja ljudskih poslova.
-Osnovni zadatak je raspoznavanje veze između obrazaca na slici i rješenja problema koji se želi riješiti. 
+Osnovni zadatak je raspoznavanje veze između obrazaca na slici i rješenja problema koji se želi riješiti \cite{ballard1982computer}. 
 Svi procesi koji koriste strojno učenje u konačnici se svode na  detekciju i klasifikaciju elemenata na slici.
 Metode računalnog vida temelje se na geometriji, statistici, fizici i teoriji učenja. \\
 Danas se velika količina problema rješava uz pomoć računalnog vida, često da ljudi toga nisu ni svjesni:
@@ -52,7 +52,7 @@ Pooling filter jednostavno smanjuje "rezoluciju" prethodnog sloja, ne mjenjajuć
 Na primjer, vertikalna linija, krug, ili elipsa, ostaje ono što jest jedino manje razlučivo. 
 Bitno je napomenuti da smanjivanjem rezolucije dobivamo puno manje parametara za učenje. 
 Stavimo to u brojeve. \\
-Slike unutar \emph{mnist} seta podataka su veličine $28\times28$.
+Slike unutar \emph{mnist} skupa podataka su veličine $28\times28$.
 To znači da bi se učilo $28*28$ parametara. 
 Primjenom \emph{Max pooling sloja} veličine $2\times2$, učilo bi se $\frac{1}{4}\times(28\times28)$ parametara. 
 
@@ -67,4 +67,4 @@ Spomenute prednosti referenciraju se na glavnu značajku \emph{konvolucijskih mr
 Cilj je ići dublje, ne šire. 
 Za sliku veličine $100\times100$, potpuno povezanoj neuronskoj mreži u prvom sloju treba \texttt{10 000} čvorova, svaki sa svojim parametrom za treniranje, dok konvolucijskoj to ne treba. \\
 Svaki sljedeći sloj ima drugu ulogu. 
-Prvi najčešće ima ulogu raspoznavanja najosnovnijih elemenata slike kao što su različiti rubovi, dok sve dublji koriste podatke od prošlih i osnovne elemente grupiraju u apstraktne strukture koji predstavljaju značajnije elemente slike (\cite{o2015introduction}).
+Prvi najčešće ima ulogu raspoznavanja najosnovnijih elemenata slike kao što su različiti rubovi, dok sve dublji koriste podatke od prošlih i osnovne elemente grupiraju u apstraktne strukture koji predstavljaju značajnije elemente slike \cite{o2015introduction}.

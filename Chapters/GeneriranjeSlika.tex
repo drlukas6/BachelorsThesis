@@ -35,7 +35,7 @@ Nakon raspodjele \texttt{80:20} za trening i validaciju na 15 000 slika, veliči
 \subsection{Generalizacija postupka}
 Za relativan uspjeh treniranja mreže za detekciju i klasifikaciju 14 tekstovnih elemenata (0-9, +, -, *, :) rezultati su pokazali da je potrebno minimalno 10 000 slika. 
 Ne samo zbog broja elemenata već i zbog složenosti i raznolikosti između njih. 
-Razvijeni postupak primjenjuje sve taktike \cite{chollet2017deep} potrebne za stvaranje raznovrsnog i kvalitetnog seta podataka.
+Razvijeni postupak primjenjuje sve taktike \cite{chollet2017deep} potrebne za stvaranje raznovrsnog i kvalitetnog skupa podataka.
 Zbog transformacija opisanih u daljnjim dijelovima poglavlja, gotovo je nemoguće, da iako se isti font stavlja na pozadinu, nastane isti oblik.
 Na slici ~\ref{fig:imageGenerationPipeline} prikazana je topologija cjevovoda koja kreira slike.
 Cijeli cjevovod implementiran je unutar programskog paketa \emph{ImageGenerator}, razvijen u svrhu apstraktiranja cijelog postupka.
@@ -64,32 +64,9 @@ Fontovi su bili prikupljeni sa sljedećih izvora, a na slici ~\ref{fig:fontDiffs
 \end{figure}
 
 \subsection{Generiranje simbola}
-Nakon prikupljanja i sortiranja fontova, generiranje samih simbola bio je jednostavan posao.
+Nakon prikupljanja i sortiranja fontova, generiranje samih simbola jednostavan je posao.
 Važno je očuvati transparentnost pozadine iza simbola jer u trenutku kada se postavi na pozadinu po izboru, ona mora biti vidljiva.
-\begin{algorithm}
-\caption{Generiraj sve simbole}
-\begin{algorithmic}[1]
-	\Function{generirajTextSliku}{$font, simbol$}
-		\State $velicina \gets font.velicina(simbol)$
-		\State $slika \gets Image('RGBA', velicina, (255, 255, 255, 0))$
-		\State $slika.text = simbol$
-		\State \Return $slika$
-	\EndFunction
-	\Function{generirajSveSimbole}{\null}
-		\For{\texttt{simbol in simboli}}
-			\For{\texttt{font in fontovi}}
-				\State $direktorijSimbola \leftarrow spoji(putDoSimbola, simbol)$
-				\If{$direktorijSimbola\ ne\ postoji$}
-					\State \Call{kreirajDirektorij}{$direktorijSimbola$}
-				\EndIf
-				\State $generirana slika \gets$ \Call{generirajTextSliku}{$font, simbol$}
-				\State \Call{spremiSliku}{$generiranaSlika$}
-			\EndFor
-		\EndFor
-	\EndFunction
-\end{algorithmic}
-\end{algorithm}
-
+Nakon postavljanja simbola, izvode se transformacije opisane u daljnjem tekstu.
 \subsection{Transformacije}
 Prije postavljanja simbola na nasumično odabranu sliku, svaki simbol prošao je kroz tri točke transformiranja:
 \begin{enumerate}

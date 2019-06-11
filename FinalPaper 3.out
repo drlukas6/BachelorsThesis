@@ -1,0 +1,36 @@
+\BOOKMARK [0][-]{chapter.1}{Uvod}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Uvod}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Racunalni vid}{chapter.1}% 3
+\BOOKMARK [2][-]{subsection.1.2.1}{Pregled}{section.1.2}% 4
+\BOOKMARK [2][-]{subsection.1.2.2}{Konvolucijske neuronske mre\236e}{section.1.2}% 5
+\BOOKMARK [0][-]{chapter.2}{Generiranje skupa podataka}{}% 6
+\BOOKMARK [1][-]{section.2.1}{Znacaj podataka u dubokom ucenju}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.2}{Generiranje slika}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.1}{Generalizacija postupka}{section.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.2}{Prikupljanje fontova}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.3}{Generiranje simbola}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.4}{Transformacije}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.5}{Kreiranje cjelovitih slika}{section.2.2}% 13
+\BOOKMARK [1][-]{section.2.3}{TFRecords}{chapter.2}% 14
+\BOOKMARK [0][-]{chapter.3}{Single Shot MultiBox Detector mre\236a}{}% 15
+\BOOKMARK [1][-]{section.3.1}{Za\235to je nastala SSD mre\236a}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.2}{Arhitekture kori\235tenih mre\236a}{chapter.3}% 17
+\BOOKMARK [2][-]{subsection.3.2.1}{Arhitektura VGG-16}{section.3.2}% 18
+\BOOKMARK [2][-]{subsection.3.2.2}{Arhitektura SSD}{section.3.2}% 19
+\BOOKMARK [0][-]{chapter.4}{Ucenje}{}% 20
+\BOOKMARK [1][-]{section.4.1}{Ucenje SSD neuronske mre\236e}{chapter.4}% 21
+\BOOKMARK [2][-]{subsection.4.1.1}{Visoki pogled na ucenje}{section.4.1}% 22
+\BOOKMARK [2][-]{subsection.4.1.2}{Odreivanje pozicije objekata}{section.4.1}% 23
+\BOOKMARK [2][-]{subsection.4.1.3}{Odreivanje parametara za nastavak ucenja}{section.4.1}% 24
+\BOOKMARK [2][-]{subsection.4.1.4}{Definiranje trajanja ucenja}{section.4.1}% 25
+\BOOKMARK [0][-]{chapter.5}{Rezultati}{}% 26
+\BOOKMARK [1][-]{section.5.1}{Opis rezultata}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.2}{Prikaz rezultata}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.3}{Tensorboard rezultati}{chapter.5}% 29
+\BOOKMARK [0][-]{chapter.6}{Programska podr\235ka}{}% 30
+\BOOKMARK [1][-]{section.6.1}{Kori\235tenje programske podr\235ke}{chapter.6}% 31
+\BOOKMARK [2][-]{subsection.6.1.1}{Ispis pronaenog teksta}{section.6.1}% 32
+\BOOKMARK [2][-]{subsection.6.1.2}{Pretraga une\235enog teksta}{section.6.1}% 33
+\BOOKMARK [1][-]{section.6.2}{Buduci rad}{chapter.6}% 34
+\BOOKMARK [0][-]{chapter.7}{Zakljucak}{}% 35
+\BOOKMARK [0][-]{chapter*.29}{Literatura}{}% 36
