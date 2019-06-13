@@ -180,10 +180,6 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmss12.tfm
 INPUT /usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmro12.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmtto10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
 INPUT FinalPaper.toc
@@ -209,6 +205,8 @@ INPUT Chapters/Uvod.tex
 INPUT Chapters/Uvod.tex
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmr17.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmtt12.tfm
 INPUT Images/cv_traffic.jpg
 INPUT ./Images/cv_traffic.jpg
@@ -343,10 +341,8 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr8.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri10.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri12.pfb
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmro12.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmss12.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy8.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt12.pfb
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtto10.pfb
